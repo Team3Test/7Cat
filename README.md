@@ -15,7 +15,7 @@
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
-<table>
+<table align="center">
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/realjayson"><img src="https://avatars.githubusercontent.com/u/154860889?v=4?s=100" width="100px;" alt="Jayson"/><br /><sub><b>Jayson</b></sub></a><br /><a href="#maintenance-realjayson" title="Maintenance">🚧</a> <a href="https://github.com/Team3Test/7Cat/commits?author=realjayson" title="Documentation">📖</a> <a href="https://github.com/Team3Test/7Cat/commits?author=realjayson" title="Code">💻</a></td>

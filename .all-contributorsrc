@@ -28,6 +28,17 @@
         "bug",
         "code"
       ]
+    },
+    {
+      "login": "citrus73",
+      "name": "citrus",
+      "avatar_url": "https://avatars.githubusercontent.com/u/165360466?v=4",
+      "profile": "https://github.com/citrus73",
+      "contributions": [
+        "maintenance",
+        "question",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

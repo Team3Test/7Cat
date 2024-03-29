@@ -10,7 +10,7 @@
  </p>
 </p>
 
-<h2 align="center">Contributors</h2>
+<h2 align="center">贡献者</h2>
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

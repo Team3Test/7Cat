@@ -17,6 +17,17 @@
         "doc",
         "code"
       ]
+    },
+    {
+      "login": "Arpwang",
+      "name": "Arp",
+      "avatar_url": "https://avatars.githubusercontent.com/u/165374219?v=4",
+      "profile": "https://github.com/Arpwang",
+      "contributions": [
+        "maintenance",
+        "design",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

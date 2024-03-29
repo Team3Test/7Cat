@@ -1,5 +1,5 @@
 <p align="center">
- <img width="500px" src="./repofiles/logo.png" align="center" alt="GitHub Readme Stats" />
+ <img width="600px" src="./repofiles/‌‌‌Cover.png" align="center" alt="GitHub Readme Stats" />
  <h2 align="center">七猫中文网</h2>
  <p align="center">七猫是一家深耕文化娱乐行业的互联网企业，公司总部位于上海市浦东新区海阳西路555号前滩中心25—26楼，在北京、武汉、海南澄迈设有分部，现有员工800余人。公司创始人及核心管理层均来自A股互联网上市公司，企业文化诚实踏实，团队有创业拼搏精神。目前，七猫旗下拥有数字阅读平台“七猫免费小说”，及原创文学平台“七猫中文网”等产品，并积极拓展影视、有声、动漫、出版改编及网文出海等版权衍生业务。</p>
  <p align="center">
@@ -11,6 +11,7 @@
 </p>
 
 <h2 align="center">Contributors</h2>
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->

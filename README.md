@@ -1,6 +1,6 @@
 # 7Cat - 七猫中文网
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![logo](./repofiles/logo.png)
@@ -37,6 +37,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/whuiboy"><img src="https://avatars.githubusercontent.com/u/165365232?v=4?s=100" width="100px;" alt="whuiboy"/><br /><sub><b>whuiboy</b></sub></a><br /><a href="#maintenance-whuiboy" title="Maintenance">🚧</a> <a href="https://github.com/Team3Test/7Cat/issues?q=author%3Awhuiboy" title="Bug reports">🐛</a> <a href="https://github.com/Team3Test/7Cat/commits?author=whuiboy" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/citrus73"><img src="https://avatars.githubusercontent.com/u/165360466?v=4?s=100" width="100px;" alt="citrus"/><br /><sub><b>citrus</b></sub></a><br /><a href="#maintenance-citrus73" title="Maintenance">🚧</a> <a href="#question-citrus73" title="Answering Questions">💬</a> <a href="https://github.com/Team3Test/7Cat/commits?author=citrus73" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Arpwang"><img src="https://avatars.githubusercontent.com/u/165374219?v=4?s=100" width="100px;" alt="Arp"/><br /><sub><b>Arp</b></sub></a><br /><a href="#maintenance-Arpwang" title="Maintenance">🚧</a> <a href="#design-Arpwang" title="Design">🎨</a> <a href="https://github.com/Team3Test/7Cat/commits?author=Arpwang" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Augustyxy"><img src="https://avatars.githubusercontent.com/u/165367686?v=4?s=100" width="100px;" alt="Augustyxy"/><br /><sub><b>Augustyxy</b></sub></a><br /><a href="#maintenance-Augustyxy" title="Maintenance">🚧</a> <a href="#security-Augustyxy" title="Security">🛡️</a> <a href="https://github.com/Team3Test/7Cat/commits?author=Augustyxy" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>

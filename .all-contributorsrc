@@ -1,0 +1,28 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "realjayson",
+      "name": "Jayson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/154860889?v=4",
+      "profile": "https://github.com/realjayson",
+      "contributions": [
+        "maintenance",
+        "doc",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "7Cat",
+  "projectOwner": "Team3Test"
+}

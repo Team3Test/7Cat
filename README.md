@@ -1,4 +1,7 @@
 # 7Cat - 七猫中文网
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![logo](./repofiles/logo.png)
 
@@ -19,3 +22,25 @@
 |     [Arp](https://github.com/Arpwang)     |
 |                                           |
 
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/realjayson"><img src="https://avatars.githubusercontent.com/u/154860889?v=4?s=100" width="100px;" alt="Jayson"/><br /><sub><b>Jayson</b></sub></a><br /><a href="#maintenance-realjayson" title="Maintenance">🚧</a> <a href="https://github.com/Team3Test/7Cat/commits?author=realjayson" title="Documentation">📖</a> <a href="https://github.com/Team3Test/7Cat/commits?author=realjayson" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

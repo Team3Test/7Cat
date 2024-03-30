@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// ---- 顶部导航 ----
+#header{
+    border: 1px solid rgba(128, 128, 128, 0.155);
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .nav{
+        width: 100%;
+        background-color: white;
+        padding: 10px 0;
+        .navLogo{
+            width: 1150px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div:first-child{
+                img{
+                    width: auto;
+                    height: 44px;
+                    &:last-child{
+                        margin-left: 20px;
+                    }
+                }
+                a{
+                    display: inline-block;
+                }
+            }
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li:first-child{
+                    margin-right: 20px;
+                    div{
+                        width: 300px;
+                        height: 36px;
+                        background-color: #fdd117;
+                        border-radius: 32px;
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    a{
+                        width: 80px;
+                        text-align: center;
+                        line-height: 36px;
+                        height: 100%;
+                        position: absolute;
+                        right: -2px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        border-radius: 0 32px 32px 0;
+                        color: black;
+                        font-weight: 600;
+                        display: inline-block;
+                        font-size: 16px;
+                        background-color: #fdd117;
+                        &:hover{
+                            color: #222;
+                            background-color: #FCB900;
+                        }
+                    }
+                    input{
+                        outline: none;
+                        border: none;
+                        position: absolute;
+                        top: 50%;
+                        left: 2px;
+                        transform: translateY(-50%);
+                        width: 100%;
+                        height: 32px;
+                        padding: 3px 80px 3px 15px;
+                        font-size: 13px;
+                        border-radius: 32px;
+                        &::placeholder{
+                            font-size: 13px;
+                            color: rgba(128, 128, 128, 0.614);
+                        }
+                    }
+                    svg{
+                        // 输入框清除按钮
+                        display: none;
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 85px;
+                        opacity: .2;
+                    }
+                }
+                li:last-child{
+                    a{
+                        color: black;
+                        font-size: 13px;
+                        display: flex;
+                        align-items: center;
+                        &:hover{
+                            color: #cc6d29;
+                            svg{
+                                fill: #cc6d29;
+                            }
+                        }
+                    }
+                    svg{
+                        width: auto;
+                        height: 20px;
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+    .btn{
+        background-color: white;
+        width: 100%;
+        .navButton{
+            width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    height: 40px;
+                    line-height: 35px;
+                    position: relative;
+                    &:not(:last-child){
+                        margin-right: 25px;
+                    }
+                    a{
+                        color: black;
+                        font-weight: bold;
+                        font-size: 18px;
+                        display: inline-block;
+                        height: 100%;
+                        &:hover{
+                            color: #b04f08;
+                        }
+                    }
+                    .visitBtn{
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 13px;
+                            height: 3px;
+                            background-color: #fcc800;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

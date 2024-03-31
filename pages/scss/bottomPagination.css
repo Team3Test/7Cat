@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+#information-page {
+  width: 1160px;
+  margin: 24px auto 40px;
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(230, 230, 230, 0.5);
+  border-radius: 4px;
+  padding: 0 40px;
+}
+#information-page .bottom-pagination {
+  text-align: center;
+  padding: 64px 0;
+  font-size: 0;
+}
+#information-page .bottom-pagination .pagination {
+  display: flex;
+}
+#information-page .bottom-pagination .pagination ul {
+  display: flex;
+}
+#information-page .bottom-pagination .pagination ul .mui-active a {
+  background: linear-gradient(90deg, #ffe040, #fcc800);
+}
+#information-page .bottom-pagination .pagination ul .mui-active a:hover {
+  background: linear-gradient(90deg, #ffe040, #fcc800);
+}
+#information-page .bottom-pagination .pagination ul li {
+  height: 36px;
+}
+#information-page .bottom-pagination .pagination ul li a {
+  height: 36px;
+  line-height: 36px;
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+  border: none;
+  margin: 0 4px;
+  padding: 0 14px;
+  background-color: #f8f8f8;
+}
+#information-page .bottom-pagination .pagination ul li a:hover {
+  height: 36px !important;
+  overflow: hidden;
+  background: #FFFDF7;
+  color: #b04f08;
+}
+#information-page .bottom-pagination .pagination ul .num-input {
+  margin-left: 18px;
+}
+#information-page .bottom-pagination .pagination ul .num-input a {
+  width: 70px;
+  height: 35px;
+  overflow: hidden;
+  line-height: 34px;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+  border: 0;
+  overflow: hidden;
+  background: 0 0;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+#information-page .bottom-pagination .pagination ul .num-input a:hover {
+  cursor: initial;
+}/*# sourceMappingURL=bottomPagination.css.map */

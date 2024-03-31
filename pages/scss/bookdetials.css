@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #f8f8f8;
+}
+.header .detail-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 24px 0 32px;
+}
+.header .detail-header .h3 {
+  display: flex;
+}
+.header .detail-header .h3 li {
+  line-height: 18px;
+  margin-right: 8px;
+}
+.header .detail-header .h3 li a {
+  color: #666;
+}
+.header .detail-header .info {
+  padding-top: 24px;
+  display: flex;
+}
+.header .detail-header .info .infoLeft {
+  width: 860px;
+  height: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .detail-header .info .infoLeft .pic {
+  width: 195px;
+  height: 100%;
+}
+.header .detail-header .info .infoLeft .pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.header .detail-header .info .infoLeft .txt {
+  width: 632px;
+}
+.header .detail-header .info .infoLeft .txt .txt1 {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.header .detail-header .info .infoLeft .txt .txt1 span {
+  color: #fca000;
+  font-size: 26px;
+  line-height: 32px;
+  margin-left: 16px;
+}
+.header .detail-header .info .infoLeft .txt .txt2 {
+  margin-top: 8px;
+  height: 22px;
+}
+.header .detail-header .info .infoLeft .txt .txt2 span {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  line-height: 22px;
+  padding: 0 6px;
+  margin-right: 8px;
+  font-size: 14px;
+  color: #666;
+}
+.header .detail-header .info .infoLeft .txt .txt3 {
+  margin-top: 12px;
+  color: #666;
+  font-size: 14px;
+  line-height: 20px;
+}
+.header .detail-header .info .infoLeft .txt .txt3 span {
+  color: #222;
+}
+.header .detail-header .info .infoLeft .txt .txt4 {
+  margin-top: 32px;
+}
+.header .detail-header .info .infoLeft .txt .txt4 span {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  margin-right: 10px;
+}
+.header .detail-header .info .infoLeft .txt .txt5 {
+  margin-top: 28px;
+  font-size: 14px;
+  color: #666;
+  line-height: 20px;
+}
+.header .detail-header .info .infoLeft .txt .txt6 {
+  margin-top: 15px;
+}/*# sourceMappingURL=bookdetials.css.map */

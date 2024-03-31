@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>七猫排行榜</title>
+    <link rel="stylesheet" href="../scss/headNav.css">
+    <link rel="stylesheet" href="../scss/headFixedNav.css">
+    <link rel="stylesheet" href="../scss/bottomPagination.css">
+    <link rel="stylesheet" href="../scss/mui.min.css">
+    <link rel="stylesheet" href="../scss/webFooter.css">
+    <link rel="stylesheet" href="../scss/paihang.css">
+
+</head>
+
+<body>
+    <!-- ---- 顶部导航 Begin ---- -->
+    <div id="header">
+        <div class="nav">
+            <div class="navLogo">
+                <div>
+                    <a href="">
+                        <img src="https://cdn-front.qimao.com/qimao/img/header/logo.d026f02.png" alt="Logo" />
+                        <img src="https://cdn-front.qimao.com/qimao/img/header/slogan.5aedff4.png" alt="Slogan" />
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <div>
+                            <input placeholder="请输入书名/作者/主角" type="text" />
+                            <a href="">搜索</a>
+                            <svg t="1711518327142" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" p-id="4263" width="32" height="32">
+                                <path
+                                    d="M512 981.333333c259.2 0 469.333333-210.133333 469.333333-469.333333S771.2 42.666667 512 42.666667 42.666667 252.8 42.666667 512s210.133333 469.333333 469.333333 469.333333z m214.826667-261.845333a64 64 0 0 1-90.453334 1.578667l-122.794666-118.570667-118.570667 122.752A64 64 0 0 1 302.933333 636.330667l118.570667-122.752L298.666667 395.008A64 64 0 1 1 387.626667 302.933333l122.794666 118.570667 118.528-122.752A64 64 0 0 1 721.066667 387.669333l-118.613334 122.752 122.794667 118.570667a64 64 0 0 1 1.578667 90.453333z"
+                                    fill="#000000" p-id="4264"></path>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                            </svg>
+                            <span>立即登录</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn">
+            <div class="navButton">
+                <ul>
+                    <li>
+                        <a href="">首页</a>
+                    </li>
+                    <li>
+                        <a href="">分类</a>
+                    </li>
+                    <li>
+                        <a class="visitBtn" href="">排行榜</a>
+                    </li>
+                    <li>
+                        <a href="">征文活动</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">作家专区</a>
+                    </li>
+                    <li>
+                        <a href="">签约政策</a>
+                    </li>
+                    <li>
+                        <a href="">投稿指南</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ---- 顶部导航 End ---- -->
+
+    <!-- ---- 顶部 固定 导航 Begin ---- -->
+    <div id="fixedHeader">
+        <div class="nav">
+            <div class="navLogo">
+                <div class="logoNav">
+                    <a href="">
+                        <img src="https://cdn-front.qimao.com/qimao/img/header/logo.d026f02.png" alt="Logo" />
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="">首页</a>
+                        </li>
+                        <li>
+                            <a href="">分类</a>
+                        </li>
+                        <li>
+                            <a href="" class="visitBtn">排行榜</a>
+                        </li>
+                        <li>
+                            <a href="">征文活动</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">作家专区</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="">签约政策</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="sch">
+                    <li>
+                        <div>
+                            <input placeholder="请输入书名/作者/主角" type="text" />
+                            <a href="">搜索</a>
+                            <svg t="1711518327142" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" p-id="4263" width="32" height="32">
+                                <path
+                                    d="M512 981.333333c259.2 0 469.333333-210.133333 469.333333-469.333333S771.2 42.666667 512 42.666667 42.666667 252.8 42.666667 512s210.133333 469.333333 469.333333 469.333333z m214.826667-261.845333a64 64 0 0 1-90.453334 1.578667l-122.794666-118.570667-118.570667 122.752A64 64 0 0 1 302.933333 636.330667l118.570667-122.752L298.666667 395.008A64 64 0 1 1 387.626667 302.933333l122.794666 118.570667 118.528-122.752A64 64 0 0 1 721.066667 387.669333l-118.613334 122.752 122.794667 118.570667a64 64 0 0 1 1.578667 90.453333z"
+                                    fill="#000000" p-id="4264"></path>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                            </svg>
+                            <span>立即登录</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ---- 顶部 固定 导航 End ---- -->
+
+    <!-- 排行头部 -->
+    <div class="paihang-header">
+        <img src="https://cdn-front.qimao.com/qimao/img/paihang/paihang_banner.5db56bc.png" alt="">
+    </div>
+    <!-- 排行内容区 -->
+    <div class="paihang-wrap">
+        <!-- 头部 -->
+        <div class="paihang-wrap-header">
+            <div class="tab-gender">
+                <div class="boy">
+                    男生榜
+                </div>
+                <div class="girl">
+                    女生榜
+                </div>
+            </div>
+        </div>
+        <!-- 内容区 -->
+        <div class="paihang-wrap-content">
+            <div class="contentLeft">
+                <ul class="lists">
+                    <li class="active"><a href="" class="lists-1">原创风云榜 <img
+                                src="https://cdn-front.qimao.com/qimao/img/paihang/hot_icon.4dec7ae.png" alt=""></a>
+                    </li>
+                    <li><a href="" class="lists-2">原创飞跃榜<img
+                                src="https://cdn-front.qimao.com/qimao/img/paihang/hot_icon.4dec7ae.png" alt=""></a>
+                    </li>
+                    <li>
+                        <div class="lists-3">热门作品排行</div>
+                        <ul class="list">
+                            <li><a href="">大热榜</a></li>
+                            <li><a href="">新书榜</a></li>
+                            <li><a href="">完结榜</a></li>
+                            <li><a href="">收藏榜</a></li>
+                            <li><a href="">更新榜</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="contentRight">
+                <div class="header">
+                    原创风云榜
+                </div>
+                <div class="sub-header">
+                    <div class="left">
+                        基于书籍综合指标排行
+                    </div>
+                    <div class="right">
+                        <div class="year">2024年</div>
+                        <div class="month">4月</div>
+                    </div>
+                </div>
+
+                <!-- 具体排行榜小说 -->
+                <ul class="rank-list">
+                    <li class="item1">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/4ac599ecb83f71b0a8469ca0d29db30d_360x480.jpg"
+                                alt="">
+                            <div class="bg bg1">1</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+                                <div class="spantab">
+                                    <span>蝉联</span><span class="span2">榜首</span>
+                                </div>
+                            </div>
+                            <div class="middle">
+
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/7855e0f096b6609815fb081be1591370_360x480.jpg"
+                                alt="">
+                            <div class="bg bg2">2</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+                                1名 <img src="../img/top.png" alt="">
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/16199735c977aedf0b5cfe18620bf55b_360x480.jpg"
+                                alt="">
+                            <div class="bg bg3">3</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+                                1名<img src="../img/bottom.png" alt="">
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/459c930afa4b037d7dab59a814e5ff67_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">4</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/e71e0225f6f105670b113f54f473ac2e_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">5</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/4f229a43fc9790e9c4e725921c0be08a_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">6</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+                                    1名<img src="../img/top.png" alt="">
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/7076e75ab19c7c40fc2c4103903e6d15_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">7</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+                                    2名 <img src="../img/top.png" alt="">
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/5c4bf1f68e3afa7220289dc8a3c3b6d8_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">8</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+                                17名 <img src="../img/top.png" alt="">
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/48d72ae3d0a1c4938b4ba5cdc55bd04e_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">9</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+                                1名 <img src="../img/bottom.png" alt="">
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/83064984bea8903f457325709a7fc042_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">10</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/9c7a67e914f771fafbae1c743c75bce3_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">11</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+                                1名<img src="../img/top.png" alt="">
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/3c80b976a63a60a4d2ca1b2813dc5b5c_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">12</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+                                    6名<img src="../img/bottom.png" alt="">
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/f5ae3b898fe981bd091de0b266fb0786_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">13</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+                                1名<img src="../img/top.png" alt="">
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/625682a289d46_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">14</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+                                    1名 <img src="../img/bottom.png" alt="">
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/0839cdd48e3aaa55561d13bbb3e3b407_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">15</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/bde65f1f1bf5d837af2a4b97c2e208ad_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">16</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/ac5df2182304c8a30c805873066252d7_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">17</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/620cbbffc7d8f_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">18</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/a3c6/58f21519ab8f095e142e2c0812476c04_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">19</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="pic">
+                            <img src="https://cdn.wtzw.com/bookimg/public/images/cover/62f5bebc1ab75_360x480.jpg"
+                                alt="">
+                            <div class="bg bg4">20</div>
+                        </a>
+                        <div class="txt">
+                            <a href="" class="txt1">无敌六皇子</a>
+                            <a href="" class="txt2">
+                                梁山老鬼&nbsp;|&nbsp;历史-架空历史&nbsp;|&nbsp;连载中&nbsp;|&nbsp;146.01万字
+                            </a>
+                            <div class="txt3">
+                                云铮穿越成大乾王朝六皇子，不夺嫡，不宫斗，只想安心搞军权当老六！军权在手，天下我有！
+                                文帝：老六，你那几哥哥越来不像话了，借父皇十万兵马收拾他们！
+                                太子：老弟，有话好好说，别带着兵马回来吓你哥啊！
+                                大臣：六殿下，你觉得微臣那小女儿怎么样？
+                                （关键词：穿越开局当老六、大乾六皇子、穿越老六就要当老六）
+                            </div>
+                            <div class="txt4">
+                                <a class="">
+                                    最近更新 第678章 摸不着头脑
+                                </a>
+                                <span>
+                                    2024-03-31 00:38:06
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <div class="top">
+
+                            </div>
+                            <div class="middle">
+
+                            </div>
+                            <div class="bottom">
+                                <a href="" class="join">加入书架</a>
+                                <a href="" class="read active">立即阅读</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <!-- 页脚部分 -->
+                <div id="information-page">
+                    <!-- 底部分页信息 用了mui的组件 需要引用mui.css  -->
+                    <div class="bottom-pagination">
+                        <div class="pagination mui-content-padded">
+                            <ul class="mui-pager mui-pagination mui-pagination-sm">
+                                <!-- 此分页包括 上一页 1-5 ... 22 下一页 数字框 跳转 -->
+                                <!-- 可根据需求需自行添加（里面的样式都是死的，不会变化） -->
+                                <li>
+                                    <a href="#">
+                                        上一页
+                                    </a>
+                                </li>
+                                <li class="mui-active">
+                                    <a href="#">
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        5
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        ...
+                                    </a>
+                                </li>
+                                <li class="mui-next">
+                                    <a href="#">
+                                        22
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        下一页
+                                    </a>
+                                </li>
+                                <li class="num-input">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        跳转
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- 底部 -->
+      <div class="bottom">
+        <div id="footer">
+            <div class="footerInfo">
+                <ul class="friendLink">
+                    <li>友情链接：</li>
+                    <li>
+                        <a target="_blank" href="http://xiaoshuo.wtzw.com/">七猫免费小说</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.zongheng.com/">纵横中文网</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://miao.qimao.com/">奇妙小说网</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://huayu.zongheng.com/">纵横女生网</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://naodong.zongheng.com/">脑洞星球</a>
+                    </li>
+                </ul>
+
+                <ul class="about">
+                    <li><a target="_blank" href="">关于七猫</a><span>|</span></li>
+                    <li><a target="_blank" href="">联系我们</a><span>|</span></li>
+                    <li><a target="_blank" href="">我要举报</a><span>|</span></li>
+                    <li><a target="_blank" href="">举报工作室</a><span>|</span></li>
+                    <li><a target="_blank" href="">隐私协议</a><span>|</span></li>
+                    <li><a target="_blank" href="">版权声明</a><span>|</span></li>
+                    <li><a target="_blank" href="">我要当作家</a><span>|</span></li>
+                    <li><a target="_blank" href="">用户协议</a></li>
+                </ul>
+
+                <p class="telephone">客服电话：400-855-9290&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作时间：周一至周五9:00-18:00</p>
+
+                <p class="keepOnRecord">
+                    <span>上海七猫文化传媒有限公司&nbsp;&nbsp;© 2017 www.qimao.com All rights reserved</span>
+                    <a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">沪ICP备17012825号-6</a>
+                    <span>沪公网安备&nbsp;31011502010023号</span>
+                    <a
+                        target="_blank"
+                        href="https://wap.scjgj.sh.gov.cn/businessCheck/verifKey.do?showType=extShow&serial=9031000020190722152105000004867583-SAIC_SHOW_310000-2020030415053789015&signData=MEQCIEkBkB9iRQU6cFZkvRZxUFL3bfnb79F47g/DlN1cyQz2AiAMvdmNY5e++2nkv9YcqfTuyni81uITxhyu08vw3HgQNA=="
+                    >
+                        <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/business_license_pic.jpg" alt="" />
+                    </a>
+                </p>
+
+                <p class="publish">出版物经营许可证&nbsp;新出发沪批字第Y7129号&nbsp;沪网文 [2020] 1747-135号&nbsp;沪ICP证：沪B2-20190085</p>
+
+                <ul class="netPolice">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic1.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.12377.cn/">
+                            <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic2.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic3.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.shjbzx.cn/">
+                            <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic4.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic5.png" alt="" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/slide.js"></script>
+</body>
+
+</html>

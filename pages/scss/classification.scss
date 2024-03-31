@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    color: #222;
+}
+
+body {
+    background-color: #fff !important;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #222 !important;
+}
+
+.navLogo {
+    width: 1160px !important;
+}
+
+.navButton {
+    width: 1160px !important;
+}
+
+
+.wrapper {
+    padding-top: 24px;
+    border-top: 1px solid #ebebeb;
+
+    .main {
+        width: 1160px; // 版心
+        margin: 0 auto;
+
+        // 分类部分
+        .classify-wrap {
+            padding: 24px 30px 0 24px;
+            margin-bottom: 32px;
+            background: #f8f8f8;
+
+            // 字体14px 行高28px
+            font-size: 14px;
+            line-height: 28px;
+            border-radius: 4px;
+
+            .clearfix {
+                padding-bottom: 16px;
+                display: flex;
+                align-items: baseline;
+
+                .classify-name {
+                    width: 70px;
+                    margin-right: 14px;
+                    text-align: right;
+                    color: #999;
+                }
+
+                .classify-con {
+                    flex: 1;
+
+                    .row {
+                        display: flex;
+
+                        a {
+                            display: block;
+                            height: 28px;
+                            line-height: 20px;
+                            padding: 4px 12px;
+                            margin: 0 8px 8px 0;
+                        }
+
+                        a.active {
+                            font-weight: 700;
+                            background-image: linear-gradient(90deg, #ffe040, #fcc800);
+                            border-radius: 14px;
+                        }
+                    }
+
+                }
+
+                .classify-con.item2 {
+                    display: none;
+                }
+
+                .classify-con.item2.active {
+                    display: block;
+                }
+
+
+
+            }
+
+        }
+
+        // 图片和文字
+        .qimao-md {
+            .mod-th {
+                height: 52px;
+                display: flex;
+                justify-content: space-between;
+
+                .th-left {
+                    margin-top: 8px;
+                    display: flex;
+                    align-items: flex-start;
+
+                    a {
+                        height: 20px;
+                        margin-right: 32px;
+
+                        span {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #222;
+                            line-height: 20px;
+                        }
+
+                        span.active {
+                            color: #fcc800;
+                        }
+                    }
+                }
+
+                .th-right {
+                    margin-top: 8px;
+                    display: flex;
+
+                    a {
+                        display: block;
+                        padding: 0 12px;
+                        border: 1px solid #f5f5f5;
+                        line-height: 26px;
+                        height: 26px;
+                        border-radius: 26px;
+                        color: #222;
+                        background: #fff;
+                        font-weight: 700;
+                        border-color: #ddd;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .qm-pic {
+                width: 1220px;
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    width: 360px;
+                    height: 146px;
+                    margin-bottom: 40px;
+                    margin-right: 40px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .pic {
+                        width: 110px;
+                        height: 146px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 2px;
+                        }
+                    }
+
+                    .text {
+                        width: 234px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .text1 {
+                            font-size: 16px;
+                            color: #222;
+                            padding-top: 4px;
+                        }
+
+                        .text2 {
+                            padding-top: 8px;
+                            color: #999;
+                            line-height: 20px;
+                            display: flex;
+                            font-size: 12px;
+
+                            .t2-1,
+                            .t2-2,
+                            .t2-3 {
+                                margin-right: 10px;
+                                color: #999;
+                            }
+
+                            .t2-1 {
+                                padding: 0px 4px;
+                                border: 1px solid #ddd;
+                                border-radius: 4px;
+                            }
+                        }
+
+                        .text3 {
+                            height: 42px;
+                            line-height: 17px;
+                            padding-top: 8px;
+                            margin-bottom: auto;
+                            font-size: 12px;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            overflow: hidden;
+                            -webkit-box-orient: vertical;
+                            color: #999;
+                        }
+
+                        .text4 {
+                            line-height: 17px;
+                            font-size: 12px;
+                            padding-bottom: 3px;
+                            color: #999;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+#information-page {
+    width: 1160px;
+    height: 100px;
+    padding: 24px 0px 40px;
+    margin: 0 auto;
+}
+.bottom-pagination {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.mui-content-padded {
+    margin: 0 !important;
+}

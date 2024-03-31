@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 5168px;
+}
+.box .first .first-title {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  height: 64px;
+  margin: 0 auto;
+  align-items: center;
+}
+.box .first .first-title .first-top-left {
+  margin-left: 20px;
+}
+.box .first .first-title .first-top-left img {
+  width: 156px;
+  height: 36px;
+  padding: 14px 0;
+}
+.box .first .first-title .first-top-right {
+  width: 349px;
+  height: 34px;
+  display: flex;
+  line-height: 34px;
+  justify-content: space-between;
+}
+.box .first .first-title .first-top-right .first-top-right-left {
+  position: relative;
+  display: flex;
+  width: 240px;
+  height: 34px;
+  border: 1px solid;
+  background-color: #FDD117;
+  border-radius: 30px;
+  text-align: right;
+  border: none;
+}
+.box .first .first-title .first-top-right .first-top-right-left p {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 34px;
+  height: 34px;
+  width: 60px;
+}
+.box .first .first-title .first-top-right .first-top-right-left .alert {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  outline: none;
+  border: none;
+  width: 148px;
+  height: 20px;
+  padding: 5px 16px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.box .first .first-title .first-top-right .first-top-right-left ::-moz-placeholder {
+  color: #c0bdbd;
+}
+.box .first .first-title .first-top-right .first-top-right-left ::placeholder {
+  color: #c0bdbd;
+}
+.box .first .first-title .first-top-right .first-top-right-right {
+  display: flex;
+  margin-right: 15px;
+}
+.box .first .first-title .first-top-right .first-top-right-right .icon-zhuce {
+  font-size: 19px;
+  color: #222222;
+  padding: 0 4px 0 0;
+}
+.box .first .first-title .first-top-right .first-top-right-right p {
+  color: #222222;
+  font-size: 14px;
+}
+.box .three {
+  margin-top: 15px;
+  padding: 0 70px 60px;
+  width: 820px;
+  height: 4462px;
+  background-color: white;
+  margin: 0 auto;
+}
+.box .three .three-top {
+  width: 820px;
+  height: 63px;
+  padding: 40px 0 30px;
+  border-bottom: 2px dashed #ddd;
+}
+.box .three .three-top .three-top-top {
+  text-align: center;
+}
+.box .three .three-top .three-top-top p {
+  color: #222222;
+  font-size: 24px;
+}
+.box .three .three-top .three-top-bottom {
+  width: 600px;
+  height: 16px;
+  display: flex;
+  justify-content: space-around;
+  margin: 16px auto;
+}
+.box .three .three-top .three-top-bottom .one {
+  display: flex;
+  margin: 0 20px;
+}
+.box .three .three-top .three-top-bottom .one p {
+  color: #666;
+  font-size: 12px;
+}
+.box .three .three-top .three-top-bottom .one div {
+  color: #222;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.box .three .three-bottom {
+  margin-top: 17px;
+}
+.box .three .three-bottom p {
+  color: #222;
+  font-size: 18px;
+  padding: 13px 0;
+  text-align: justify;
+  line-height: 32px;
+}
+.box .three .three-bottom .packet {
+  display: flex;
+  justify-content: center;
+}
+.box .three .three-bottom .packet .last {
+  margin: 0 80px 0 0;
+}
+.box .three .three-bottom .packet .last a p {
+  width: 80px;
+  font-size: 16px;
+  color: #222222;
+  border: 1px solid;
+  padding: 0 30px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 20px auto;
+}
+.box .three .three-bottom .packet a {
+  text-decoration: none;
+}
+.box .three .three-bottom .packet a div {
+  width: 80px;
+  height: 40px;
+  font-size: 16px;
+  color: #222222;
+  border: 1px solid;
+  background-image: linear-gradient(90deg, #ffe040, #fcc800);
+  padding: 0 30px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  margin: 20px auto;
+}/*# sourceMappingURL=next.css.map */

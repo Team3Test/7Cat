@@ -1,0 +1,59 @@
+.bottom-pagination {
+    text-align: center;
+    padding: 35px 0;
+    font-size: 0;
+    .pagination {
+        display: flex;
+        ul {
+            display: flex;
+            .mui-active {
+                a {
+                    background: linear-gradient(90deg, #ffe040, #fcc800);
+                    &:hover {
+                        background: linear-gradient(90deg, #ffe040, #fcc800);
+                    }
+                }
+            }
+            li {
+                height: 36px;
+                a {
+                    height: 36px;
+                    line-height: 36px;
+                    color: #666;
+                    font-size: 14px;
+                    text-decoration: none;
+                    border: none;
+                    margin: 0 4px;
+                    padding: 0 14px;
+                    background-color: #f8f8f8;
+                    &:hover {
+                        height: 36px !important;
+                        overflow: hidden;
+                        background: #fffdf7;
+                        color: #b04f08;
+                    }
+                }
+            }
+            .num-input {
+                margin-left: 18px;
+                a {
+                    width: 70px;
+                    height: 35px;
+                    overflow: hidden;
+                    line-height: 34px;
+                    font-size: 14px;
+                    text-align: center;
+                    color: #666;
+                    border: 0;
+                    overflow: hidden;
+                    background: 0 0;
+                    border-bottom: 1px solid #ddd;
+                    vertical-align: top;
+                    &:hover {
+                        cursor: initial;
+                    }
+                }
+            }
+        }
+    }
+}

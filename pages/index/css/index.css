@@ -1,0 +1,1812 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* ul {
+  list-style-type: none;
+}
+* a {
+  text-decoration: none;
+}
+
+.thover {
+  margin-bottom: 20px;
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+}
+.thover h3 {
+  font-size: 22px;
+  color: black;
+  font-family: "SourceHanSerifCN";
+}
+.thover svg {
+  width: 18px;
+  height: 18px;
+  fill: #222;
+  margin-top: 2px;
+}
+.thover:hover h3,
+.thover:hover p {
+  color: #cc6d29;
+}
+.thover:hover svg {
+  fill: #cc6d29;
+}
+
+@font-face {
+  font-family: "SourceHanSerifCN";
+  src: url(../font/SourceHanSerifCN-Bold.ttf);
+}
+#wrap {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 9;
+}
+#wrap #wrapcon {
+  width: 1150px;
+  margin: 0 auto;
+  margin-top: -70px;
+  margin-bottom: 50px;
+}
+
+#newsList {
+  width: 100%;
+  height: 263px;
+  display: flex;
+  justify-content: space-between;
+}
+#newsList .author {
+  width: 674px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#newsList .author .authorTop {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#newsList .author .authorTop a {
+  color: rgba(82, 41, 0, 0.9);
+  position: relative;
+  width: 48%;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #fff8ea, #fff1d6);
+}
+#newsList .author .authorTop a .bgimg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+}
+#newsList .author .authorTop a h3 {
+  font-size: 24px;
+  font-family: "SourceHanSerifCN";
+  color: rgba(82, 41, 0, 0.9);
+}
+#newsList .author .authorTop a ul {
+  display: flex;
+  justify-content: start;
+}
+#newsList .author .authorTop a ul li {
+  line-height: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#newsList .author .authorTop a ul li span {
+  font-size: 16px;
+}
+#newsList .author .authorTop a ul li svg {
+  fill: rgba(82, 41, 0, 0.9);
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0 -2px;
+}
+#newsList .author .authorTop a ul li:hover {
+  color: #cc6d29;
+}
+#newsList .author .authorTop a ul li:hover svg {
+  fill: #cc6d29;
+}
+#newsList .author .nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  padding: 16px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+#newsList .author .nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px;
+}
+#newsList .author .nav ul li img {
+  width: 26px;
+  margin-right: 10px;
+}
+#newsList .author .nav ul li:first-child {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  position: relative;
+}
+#newsList .author .nav ul li:first-child a {
+  color: black;
+}
+#newsList .author .nav ul li:not(:first-child) a {
+  color: #222;
+}
+#newsList .author .nav ul li a:hover {
+  color: #cc6d29;
+}
+#newsList .news {
+  width: 450px;
+  height: 100%;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 25px 15px 15px;
+}
+#newsList .news ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+#newsList .news ul li {
+  line-height: 20px;
+  height: 20px;
+}
+#newsList .news ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#newsList .news ul li a p {
+  width: 380px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#newsList .news ul li a:hover h3,
+#newsList .news ul li a:hover p {
+  color: #cc6d29;
+}
+#newsList .news ul li a:hover svg {
+  fill: #cc6d29;
+}
+#newsList .news ul li:first-child {
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+}
+#newsList .news ul li:first-child h3 {
+  font-size: 22px;
+  color: black;
+  font-family: "SourceHanSerifCN";
+}
+#newsList .news ul li:not(:first-child) {
+  font-size: 14px;
+}
+#newsList .news ul li:not(:first-child) p {
+  color: #222;
+}
+#newsList .news ul li:not(:first-child) span {
+  color: #999;
+  font-size: 12px;
+}
+
+#bookRank {
+  margin-top: 40px;
+}
+#bookRank .rankConBlock .thover h3 {
+  font-size: 20px;
+}
+#bookRank .rankCon {
+  display: flex;
+  justify-content: space-between;
+}
+#bookRank .rankCon .rankConBlock {
+  width: 260px;
+  padding: 0px 10px 0;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #f5f6f7 0%, #ffffff 33%, #ffffff 100%);
+}
+#bookRank .rankCon .rankConBlock .blockTitle {
+  margin-top: 15px;
+}
+#bookRank .rankCon .rankConBlock .bookRankList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 430px;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem {
+  cursor: pointer;
+  padding: 3px 0;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover:hover p {
+  color: #cc6d29;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover p {
+  font-size: 14px;
+  width: 210px;
+  color: #222;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover img {
+  width: 22px;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .xuhao {
+  color: #666;
+  font-size: 14px;
+  padding: 0 6px;
+  font-weight: 700;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem:not(:first-child) {
+  line-height: 22px;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem:last-child .bookItemboxSmall .smallhover .xuhao {
+  padding: 0 1px;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox {
+  display: none;
+  justify-content: space-between;
+  height: 95px;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookNumber img {
+  width: 22px;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo {
+  text-align: justify;
+  width: 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .bookName {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #222;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .bookAuthor {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo a:hover {
+  color: #cc6d29;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo p {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fca000;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo p span {
+  font-size: 12px;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage div {
+  width: 75px;
+  height: 95px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage div:before {
+  content: "";
+  position: absolute;
+  z-index: 8;
+  height: 100%;
+  width: 6px;
+  top: 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAEYBAMAAACn+WuLAAAAKlBMVEUCAgL5+fnLy8v///+YmJj///81NTX///////9oaGj///9oaGj///////+vkByxAAAADnRSTlMUKSUjIBsZEwIdCx8MCnNYnUoAAAAvSURBVEjHYwCCTCfh8BsgRjaQcQImsmKUMcoYZYwyRhmjjFHGKGOUMagZKI23GwDR8+dsh/4/4wAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.2s;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage:hover img {
+  scale: 1.1;
+  transition: all 0.2s;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemshow {
+  display: flex;
+  height: 95px;
+}
+#bookRank .rankCon .rankConBlock .bookRankList .bookItem .smallhidden {
+  display: none !important;
+}
+
+#publish {
+  margin-top: 40px;
+}
+#publish .thover:hover h3 {
+  color: black;
+}
+#publish .bookPublish {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#publish .bookPublish .publishBlock {
+  display: flex;
+  justify-content: space-between;
+  height: 147px;
+}
+#publish .bookPublish .publishBlock:last-child {
+  margin-top: 25px;
+}
+#publish .bookPublish .publishBlock .bookBlock {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+#publish .bookPublish .publishBlock .bookBlock div {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  width: 110px;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+#publish .bookPublish .publishBlock .bookBlock div a:hover img {
+  scale: 1.1;
+  transition: all 0.2s;
+}
+#publish .bookPublish .publishBlock .bookBlock div a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+}
+#publish .bookPublish .publishBlock .bookBlock div:before {
+  content: "";
+  position: absolute;
+  z-index: 8;
+  height: 100%;
+  width: 8px;
+  top: 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAEYBAMAAACn+WuLAAAAKlBMVEUCAgL5+fnLy8v///+YmJj///81NTX///////9oaGj///9oaGj///////+vkByxAAAADnRSTlMUKSUjIBsZEwIdCx8MCnNYnUoAAAAvSURBVEjHYwCCTCfh8BsgRjaQcQImsmKUMcoYZYwyRhmjjFHGKGOUMagZKI23GwDR8+dsh/4/4wAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#publish .bookPublish .publishBlock .bookBlock ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#publish .bookPublish .publishBlock .bookBlock ul li:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#publish .bookPublish .publishBlock .bookBlock ul li:first-child .bookname {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #222;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+#publish .bookPublish .publishBlock .bookBlock ul li:first-child .bookauthor {
+  font-size: 12px;
+  color: #999;
+}
+#publish .bookPublish .publishBlock .bookBlock ul li a:hover {
+  color: #cc6d29 !important;
+}
+#publish .bookPublish .publishBlock .bookBlock ul p {
+  text-align: justify;
+  color: #553107;
+  font-size: 12px;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#topAuthor {
+  margin-top: 40px;
+  position: relative;
+}
+#topAuthor::-webkit-scrollbar {
+  display: none;
+}
+#topAuthor .thover:hover h3 {
+  color: black;
+}
+#topAuthor .sbtn {
+  box-shadow: 0 0 6px 0 hsla(0, 0%, 81.2%, 0.5);
+  cursor: pointer;
+  display: none;
+  z-index: 999999;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(34, 34, 34, 0.3);
+  top: 46%;
+}
+#topAuthor .sbtn svg {
+  fill: white;
+  width: 32px;
+  height: 32px;
+}
+#topAuthor .leftbtn {
+  position: absolute;
+  left: -14px;
+}
+#topAuthor .rightbtn {
+  position: absolute;
+  right: -14px;
+}
+#topAuthor .active {
+  display: inline-flex;
+}
+#topAuthor .authorInfo {
+  overflow: auto;
+}
+#topAuthor .authorInfo::-webkit-scrollbar {
+  display: none;
+}
+#topAuthor .scollwrap {
+  padding-bottom: 20px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
+}
+#topAuthor .scollwrap::-webkit-scrollbar {
+  display: none;
+}
+#topAuthor .infoCon {
+  transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+#topAuthor .infoCon a {
+  color: #222;
+}
+#topAuthor .infoCon .infoBlock {
+  position: relative;
+  padding: 20px;
+  width: 260px;
+  border-radius: 6px;
+  background-color: rgb(245, 246, 247);
+}
+#topAuthor .infoCon .infoBlock:hover:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 86px;
+  width: calc(100% - 30px);
+  bottom: -3px;
+  background: #dfdfdf;
+  border-radius: 4px;
+  filter: blur(12px);
+  z-index: -9;
+  transition: all 0.5s;
+}
+#topAuthor .infoCon .infoBlock:not(:last-child) {
+  margin-right: 30px;
+}
+#topAuthor .infoCon .infoBlock .topinfo {
+  display: flex;
+  justify-content: start;
+}
+#topAuthor .infoCon .infoBlock .topinfo .authorPic {
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+#topAuthor .infoCon .infoBlock .topinfo .authorPic img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#topAuthor .infoCon .infoBlock .topinfo ul img {
+  width: auto;
+  height: 21px;
+  margin-right: 5px;
+}
+#topAuthor .infoCon .infoBlock .topinfo ul li:first-child {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+#topAuthor .infoCon .infoBlock .topinfo ul li:first-child:hover {
+  color: #cc6d29;
+}
+#topAuthor .infoCon .infoBlock .topinfo ul li:last-child {
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+}
+#topAuthor .infoCon .infoBlock .topinfo ul li:last-child div {
+  margin-top: 3px;
+  position: relative;
+  padding: 0 10px 0 16px;
+  border-radius: 10px;
+  background-color: #aa8847;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  color: white;
+  height: 15px;
+}
+#topAuthor .infoCon .infoBlock .topinfo ul li:last-child div img {
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  transform: translateY(-57%);
+  height: 18px;
+}
+#topAuthor .infoCon .infoBlock .authorbook {
+  margin-top: 15px;
+}
+#topAuthor .infoCon .infoBlock .authorbook p:first-child {
+  font-size: 14px;
+  color: #222;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#topAuthor .infoCon .infoBlock .authorbook p:last-child {
+  font-size: 12px;
+  color: #666;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+}
+
+#topic1 {
+  margin-top: 20px;
+}
+#topic1 .quote {
+  background-color: #faf7f4;
+}
+
+#topic2 {
+  margin-top: 40px;
+}
+#topic2 .thover:hover h3 {
+  color: #cc6d29;
+}
+#topic2 .quote {
+  background-color: #f4f6fa;
+}
+
+.topic .thover {
+  display: flex;
+  align-items: center;
+}
+.topic .thover img {
+  width: 44px;
+  height: 20px;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+.topic .thover:hover h3 {
+  color: black;
+}
+.topic .quote {
+  padding: 15px 10px;
+  background-color: #faf7f4;
+  margin-bottom: 20px;
+}
+.topic .quote p {
+  color: #666;
+  font-size: 14px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.topic .topicBook ul {
+  display: flex;
+  justify-content: space-between;
+}
+.topic .topicBook ul li div {
+  overflow: hidden;
+  width: 110px;
+  height: 147px;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.topic .topicBook ul li div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.2s;
+}
+.topic .topicBook ul li div:hover {
+  transition: all 0.2s;
+}
+.topic .topicBook ul li div:hover img {
+  scale: 1.1;
+}
+.topic .topicBook ul li div:before {
+  content: "";
+  position: absolute;
+  z-index: 8;
+  height: 100%;
+  width: 8px;
+  top: 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAEYBAMAAACn+WuLAAAAKlBMVEUCAgL5+fnLy8v///+YmJj///81NTX///////9oaGj///9oaGj///////+vkByxAAAADnRSTlMUKSUjIBsZEwIdCx8MCnNYnUoAAAAvSURBVEjHYwCCTCfh8BsgRjaQcQImsmKUMcoYZYwyRhmjjFHGKGOUMagZKI23GwDR8+dsh/4/4wAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.topic .topicBook ul li h4 {
+  font-weight: 400;
+  margin-top: 10px;
+  width: 110px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.topic .topicBook ul li h4 a {
+  font-size: 16px;
+  color: #222;
+}
+.topic .topicBook ul li h4 a:hover {
+  color: #cc6d29;
+}
+.topic .topicBook ul li p {
+  width: 110px;
+  margin-top: 8px;
+  line-height: 16px;
+}
+.topic .topicBook ul li p a {
+  font-size: 12px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-emphasis-color: #999;
+          text-emphasis-color: #999;
+  color: #999;
+}
+.topic .topicBook ul li p a:hover {
+  color: #cc6d29;
+}
+.topic .topicBook ul li .topicAuthor {
+  margin-top: 4px;
+}
+
+#awardZone {
+  margin-top: 40px;
+}
+#awardZone .thover:hover h3 {
+  color: black;
+}
+#awardZone ul {
+  display: flex;
+  justify-content: space-between;
+}
+#awardZone ul li div {
+  overflow: hidden;
+  width: 130px;
+  height: 173px;
+  position: relative;
+  border-radius: 2px;
+}
+#awardZone ul li div:first-child {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#awardZone ul li div:first-child img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.2s;
+}
+#awardZone ul li div:first-child:hover {
+  transition: all 0.2s;
+}
+#awardZone ul li div:first-child:hover img {
+  scale: 1.1;
+}
+#awardZone ul li div:first-child:before {
+  content: "";
+  position: absolute;
+  z-index: 8;
+  height: 100%;
+  width: 8px;
+  top: 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAEYBAMAAACn+WuLAAAAKlBMVEUCAgL5+fnLy8v///+YmJj///81NTX///////9oaGj///9oaGj///////+vkByxAAAADnRSTlMUKSUjIBsZEwIdCx8MCnNYnUoAAAAvSURBVEjHYwCCTCfh8BsgRjaQcQImsmKUMcoYZYwyRhmjjFHGKGOUMagZKI23GwDR8+dsh/4/4wAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#awardZone ul li h4 {
+  font-weight: 400;
+  margin-top: 10px;
+  width: 110px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#awardZone ul li h4 a {
+  font-size: 16px;
+  color: #222;
+}
+#awardZone ul li h4 a:hover {
+  color: #cc6d29;
+}
+#awardZone ul li p {
+  width: 110px;
+  margin-top: 8px;
+  line-height: 16px;
+}
+#awardZone ul li p a {
+  font-size: 12px;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-emphasis-color: #999;
+          text-emphasis-color: #999;
+  color: #999;
+}
+#awardZone ul li p a:hover {
+  color: #cc6d29;
+}
+#awardZone ul li .awardBadge {
+  margin-top: 14px;
+  height: 32px;
+  position: relative;
+}
+#awardZone ul li .awardBadge img {
+  position: absolute;
+  width: 16px;
+  height: 100%;
+  top: 0;
+}
+#awardZone ul li .awardBadge .leftBadge {
+  left: 0;
+}
+#awardZone ul li .awardBadge .rightBadge {
+  right: 0;
+  transform: rotateY(180deg);
+}
+#awardZone ul li .awardBadge p {
+  text-align: center;
+  font-size: 12px;
+  color: #222;
+  width: 88px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#recommendation {
+  margin-top: 40px;
+}
+#recommendation .thover {
+  margin-bottom: 40px;
+}
+#recommendation .thover:hover h3 {
+  color: black;
+}
+#recommendation .recommend {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#recommendation .recommend ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+#recommendation .recommend ul:last-child {
+  margin-top: 25px;
+}
+#recommendation .recommend ul li {
+  border-radius: 6px;
+  width: 360px;
+  position: relative;
+  padding: 10px 20px 15px;
+}
+#recommendation .recommend ul li:hover:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 86px;
+  width: calc(100% - 30px);
+  bottom: -3px;
+  background: #dfdfdf;
+  border-radius: 4px;
+  filter: blur(12px);
+  z-index: -9;
+  transition: all 0.5s;
+}
+#recommendation .recommend ul li div:first-child {
+  border-radius: 2px;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 80px;
+  height: 107px;
+  overflow: hidden;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#recommendation .recommend ul li div:first-child:before {
+  content: "";
+  position: absolute;
+  z-index: 8;
+  height: 100%;
+  width: 6px;
+  top: 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAEYBAMAAACn+WuLAAAAKlBMVEUCAgL5+fnLy8v///+YmJj///81NTX///////9oaGj///9oaGj///////+vkByxAAAADnRSTlMUKSUjIBsZEwIdCx8MCnNYnUoAAAAvSURBVEjHYwCCTCfh8BsgRjaQcQImsmKUMcoYZYwyRhmjjFHGKGOUMagZKI23GwDR8+dsh/4/4wAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#recommendation .recommend ul li div:first-child img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.2s;
+}
+#recommendation .recommend ul li div:first-child:hover img {
+  scale: 1.1;
+  transition: all 0.2s;
+}
+#recommendation .recommend ul li .bookinfo {
+  margin-left: 96px;
+  margin-bottom: 18px;
+}
+#recommendation .recommend ul li .bookinfo a:hover {
+  color: #cc6d29;
+}
+#recommendation .recommend ul li .bookinfo h4 a {
+  font-weight: 700;
+  color: inherit;
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#recommendation .recommend ul li .bookinfo p:last-child {
+  margin-top: 8px;
+}
+#recommendation .recommend ul li .bookinfo p a {
+  opacity: 0.8;
+  color: #3d201f;
+  font-size: 12px;
+}
+#recommendation .recommend ul li .recommendBorder {
+  height: 1.5px;
+  background-color: #3d201f;
+  border-radius: 1px;
+  opacity: 0.1;
+  width: 320px;
+  margin: 20px auto 10px;
+}
+#recommendation .recommend ul li .bosstalk {
+  font-size: 14px;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#recommendation .recommend ul li .bosstalk span {
+  font-weight: bold;
+}
+
+#awardRank {
+  margin-top: 20px;
+}
+#awardRank .title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#awardRank .title .thover {
+  margin-bottom: 0;
+}
+#awardRank .title p {
+  font-size: 14px;
+  color: #666;
+  margin-left: 20px;
+}
+#awardRank .rankConBlock .thover h3 {
+  font-size: 20px;
+}
+#awardRank .rankCon {
+  display: flex;
+  justify-content: space-between;
+}
+#awardRank .rankCon .rankConBlock {
+  width: 260px;
+  padding: 0px 10px 0;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #f5f6f7 0%, #ffffff 33%, #ffffff 100%);
+}
+#awardRank .rankCon .rankConBlock .blockTitle {
+  margin-top: 15px;
+}
+#awardRank .rankCon .rankConBlock .bookRankList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 430px;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem {
+  cursor: pointer;
+  padding: 3px 0;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover:hover p {
+  color: #cc6d29;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover a p {
+  font-size: 14px;
+  width: 120px;
+  color: #222;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .money {
+  font-size: 12px;
+  color: #666;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .money span {
+  margin: 0 2px;
+  font-weight: 600;
+  font-size: 14px;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover img {
+  width: 22px;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .xuhao {
+  color: #666;
+  font-size: 14px;
+  padding: 0 6px;
+  font-weight: 700;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem:not(:first-child) {
+  line-height: 22px;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem:last-child .bookItemboxSmall .smallhover .xuhao {
+  padding: 0 1px;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem:first-child .bookItemboxSmall .smallhover .money {
+  color: #ff4a26;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem:nth-child(2) .bookItemboxSmall .smallhover .money {
+  color: #ff8208;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem:nth-child(3) .bookItemboxSmall .smallhover .money {
+  color: #e39700;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox {
+  display: none;
+  justify-content: space-between;
+  height: 95px;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookNumber img {
+  width: 22px;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo {
+  text-align: justify;
+  width: 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .bookName {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #222;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .bookAuthor {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo a:hover {
+  color: #cc6d29;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo p {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #ff4a26;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo p span {
+  margin: 0 2px;
+  font-weight: 600;
+  font-size: 14px;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage div {
+  width: 75px;
+  height: 95px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage div:before {
+  content: "";
+  position: absolute;
+  z-index: 8;
+  height: 100%;
+  width: 6px;
+  top: 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAEYBAMAAACn+WuLAAAAKlBMVEUCAgL5+fnLy8v///+YmJj///81NTX///////9oaGj///9oaGj///////+vkByxAAAADnRSTlMUKSUjIBsZEwIdCx8MCnNYnUoAAAAvSURBVEjHYwCCTCfh8BsgRjaQcQImsmKUMcoYZYwyRhmjjFHGKGOUMagZKI23GwDR8+dsh/4/4wAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.2s;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage:hover img {
+  scale: 1.1;
+  transition: all 0.2s;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemshow {
+  display: flex;
+  height: 95px;
+}
+#awardRank .rankCon .rankConBlock .bookRankList .bookItem .smallhidden {
+  display: none !important;
+}
+
+#typeRank {
+  margin-top: 40px;
+}
+#typeRank .title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#typeRank .title .thover {
+  margin-bottom: 0;
+}
+#typeRank .title p {
+  font-size: 14px;
+  color: #666;
+  margin-left: 20px;
+}
+#typeRank .rankConBlock .thover {
+  margin-bottom: 5px;
+}
+#typeRank .rankConBlock .thover h3 {
+  font-size: 22px;
+}
+#typeRank .rankConBlock .thover svg {
+  width: 20px;
+  height: 20px;
+}
+#typeRank .rankCon {
+  display: flex;
+  justify-content: space-between;
+}
+#typeRank .rankCon .rankConBlock {
+  width: 260px;
+}
+#typeRank .rankCon .rankConBlock .bookRankList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 285px;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem {
+  cursor: pointer;
+  padding: 3px 0;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover a p {
+  font-size: 14px;
+  color: #222;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover a:hover p {
+  color: #cc6d29 !important;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .xuhao {
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .booktype {
+  width: 75px;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .booktype p {
+  text-align: center;
+  color: #777 !important;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .booknname {
+  width: 155px;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem:first-child {
+  margin-bottom: 3px;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem:nth-child(2) .bookItemboxSmall .smallhover .xuhao {
+  color: #ff4a26;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem:nth-child(3) .bookItemboxSmall .smallhover .xuhao {
+  color: #ff4a26;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox {
+  display: none;
+  justify-content: space-between;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookNumber img {
+  width: 22px;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo {
+  text-align: justify;
+  width: 135px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .writer {
+  margin-bottom: 8px;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .writer a {
+  color: #999;
+  font-size: 12px;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .jieshao {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo div a:first-child {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .bookName {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #222;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .bookAuthor {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo a:hover {
+  color: #cc6d29;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .renqi {
+  font-size: 12px;
+  color: #fca000;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .renqi span {
+  margin-right: 2px;
+  font-weight: 600;
+  font-size: 14px;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage .bgcon {
+  width: 110px;
+  height: 147px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage .bgcon:before {
+  content: "";
+  position: absolute;
+  z-index: 8;
+  height: 100%;
+  width: 6px;
+  top: 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAEYBAMAAACn+WuLAAAAKlBMVEUCAgL5+fnLy8v///+YmJj///81NTX///////9oaGj///9oaGj///////+vkByxAAAADnRSTlMUKSUjIBsZEwIdCx8MCnNYnUoAAAAvSURBVEjHYwCCTCfh8BsgRjaQcQImsmKUMcoYZYwyRhmjjFHGKGOUMagZKI23GwDR8+dsh/4/4wAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage .numpic {
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  width: 22px;
+  height: 16px;
+  line-height: 16px;
+  position: absolute;
+  top: 0;
+  left: -2px;
+  z-index: 9999;
+  background: url("https://cdn-front.qimao.com/qimao/img/index/book-tag.9b79d99.png") no-repeat center center/cover;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage .bg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.2s;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage:hover .bg {
+  scale: 1.1;
+  transition: all 0.2s;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .bookItemshow {
+  display: flex;
+  cursor: default;
+}
+#typeRank .rankCon .rankConBlock .bookRankList .bookItem .smallhidden {
+  display: none !important;
+}
+
+#newbook {
+  margin-top: 40px;
+}
+#newbook .title {
+  margin-bottom: 5px;
+}
+#newbook .title .thover {
+  margin-bottom: 0;
+}
+#newbook .newbooklist:not(:last-child) {
+  margin-bottom: 10px;
+}
+#newbook .rankCon {
+  display: flex;
+  justify-content: space-between;
+}
+#newbook .rankCon .rankConBlock {
+  width: 260px;
+}
+#newbook .rankCon .rankConBlock .bookRankList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem {
+  cursor: pointer;
+  padding: 3px 0;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover a p {
+  font-size: 14px;
+  color: #222;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover a:hover p {
+  color: #cc6d29 !important;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .xuhao {
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .booktype {
+  width: 75px;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .booktype p {
+  text-align: center;
+  color: #777 !important;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .booknname {
+  width: 155px;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem:first-child {
+  margin-bottom: 3px;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox {
+  display: none;
+  justify-content: space-between;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookNumber img {
+  width: 22px;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo {
+  text-align: justify;
+  width: 135px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .writer a {
+  color: #999;
+  font-size: 12px;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .writer:not(:last-child) {
+  margin-bottom: 8px;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .jieshao {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo div a:first-child {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .bookName {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #222;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .bookAuthor {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo a:hover {
+  color: #cc6d29;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage .bgcon {
+  width: 110px;
+  height: 147px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage .bgcon:before {
+  content: "";
+  position: absolute;
+  z-index: 8;
+  height: 100%;
+  width: 6px;
+  top: 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAEYBAMAAACn+WuLAAAAKlBMVEUCAgL5+fnLy8v///+YmJj///81NTX///////9oaGj///9oaGj///////+vkByxAAAADnRSTlMUKSUjIBsZEwIdCx8MCnNYnUoAAAAvSURBVEjHYwCCTCfh8BsgRjaQcQImsmKUMcoYZYwyRhmjjFHGKGOUMagZKI23GwDR8+dsh/4/4wAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage .numpic {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  width: 25px;
+  height: 16px;
+  line-height: 16px;
+  position: absolute;
+  top: 0;
+  left: -2px;
+  z-index: 9999;
+  background: url("https://cdn-front.qimao.com/qimao/img/index/book-tag.9b79d99.png") no-repeat center center/cover;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage .bg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.2s;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage:hover .bg {
+  scale: 1.1;
+  transition: all 0.2s;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .bookItemshow {
+  display: flex;
+  cursor: default;
+}
+#newbook .rankCon .rankConBlock .bookRankList .bookItem .smallhidden {
+  display: none !important;
+}
+
+#updateend {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+#updateend .thover {
+  margin-bottom: 20px;
+}
+#updateend .update {
+  width: 860px;
+}
+#updateend .update .updateinfo .inforow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  height: 32px;
+  line-height: 32px;
+}
+#updateend .update .updateinfo .inforow:hover {
+  background-color: #fffdf7;
+}
+#updateend .update .updateinfo .inforow li {
+  padding-left: 5px;
+}
+#updateend .update .updateinfo .inforow:not(:last-child) {
+  margin-bottom: 3px;
+}
+#updateend .update .updateinfo .inforow:first-child {
+  color: #999;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  height: 36px;
+  line-height: 36px;
+}
+#updateend .update .updateinfo .inforow:not(:first-child) li {
+  font-size: 14px;
+}
+#updateend .update .updateinfo .inforow:not(:first-child) li a:hover {
+  color: #cc6d29;
+}
+#updateend .update .updateinfo .inforow:not(:first-child) .type a {
+  color: #999;
+}
+#updateend .update .updateinfo .inforow:not(:first-child) .name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#updateend .update .updateinfo .inforow:not(:first-child) .name a {
+  color: #222;
+}
+#updateend .update .updateinfo .inforow:not(:first-child) .latest {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#updateend .update .updateinfo .inforow:not(:first-child) .latest a {
+  color: #222;
+}
+#updateend .update .updateinfo .inforow:not(:first-child) .author a {
+  color: #999;
+}
+#updateend .update .updateinfo .inforow:not(:first-child) .updatetime {
+  font-size: 12px;
+  color: #999;
+}
+#updateend .update .updateinfo .inforow li {
+  text-align: left;
+}
+#updateend .update .updateinfo .inforow .type {
+  width: 80px;
+}
+#updateend .update .updateinfo .inforow .name {
+  width: 215px;
+}
+#updateend .update .updateinfo .inforow .latest {
+  width: 255px;
+}
+#updateend .update .updateinfo .inforow .author {
+  width: 117px;
+}
+#updateend .update .updateinfo .inforow .updatetime {
+  width: 115px;
+}
+#updateend .end {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#updateend .end .end2 {
+  margin-top: 20px;
+}
+#updateend .rankConBlock .thover h3 {
+  font-size: 20px;
+}
+#updateend .rankCon {
+  display: flex;
+  justify-content: space-between;
+}
+#updateend .rankCon .rankConBlock {
+  width: 260px;
+  padding: 8px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #f5f6f7 0%, #ffffff 33%, #ffffff 100%);
+}
+#updateend .rankCon .rankConBlock .blockTitle {
+  margin-top: 15px;
+}
+#updateend .rankCon .rankConBlock .bookRankList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem {
+  cursor: pointer;
+  padding: 3px 0;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem:not(:last-child) {
+  margin-bottom: 5px;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover:hover p {
+  color: #cc6d29;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover a p {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #222;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover img {
+  width: 22px;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItemboxSmall .smallhover .xuhao {
+  color: #666;
+  font-size: 14px;
+  padding: 0 6px;
+  font-weight: 700;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem:not(:first-child) {
+  line-height: 22px;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem:last-child .bookItemboxSmall .smallhover .xuhao {
+  padding: 0 2px;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox {
+  display: none;
+  justify-content: space-between;
+  height: 95px;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookNumber img {
+  width: 22px;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo {
+  margin-left: -13px;
+  text-align: justify;
+  width: 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .bookName {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #222;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo .bookAuthor {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo a:hover {
+  color: #cc6d29;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo p {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #fca000;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookInfo p span {
+  margin: 0 2px;
+  font-weight: 600;
+  font-size: 14px;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage div {
+  width: 75px;
+  height: 95px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage div:before {
+  content: "";
+  position: absolute;
+  z-index: 8;
+  height: 100%;
+  width: 6px;
+  top: 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAEYBAMAAACn+WuLAAAAKlBMVEUCAgL5+fnLy8v///+YmJj///81NTX///////9oaGj///9oaGj///////+vkByxAAAADnRSTlMUKSUjIBsZEwIdCx8MCnNYnUoAAAAvSURBVEjHYwCCTCfh8BsgRjaQcQImsmKUMcoYZYwyRhmjjFHGKGOUMagZKI23GwDR8+dsh/4/4wAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.2s;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItembox .bookImage:hover img {
+  scale: 1.1;
+  transition: all 0.2s;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .bookItemshow {
+  display: flex;
+  height: 95px;
+}
+#updateend .rankCon .rankConBlock .bookRankList .bookItem .smallhidden {
+  display: none !important;
+}/*# sourceMappingURL=index.css.map */

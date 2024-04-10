@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #efefef;
+}
+
+.activity {
+    width: 1150px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 30px;
+    .qm {
+        width: 1080px;
+        height: 48px;
+        list-style: none;
+        display: flex;
+        border-bottom: 1px solid #efefef;
+        margin: auto;
+        line-height: 48px;
+        .tab {
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                width: 32px;
+                background: #fcc800;
+                margin: auto;
+                border-radius: 2px;
+            }
+            position: relative;
+            margin-right: 24px;
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 700;
+                color: #222;
+            }
+        }
+
+        .tab1 {
+            margin-right: 24px;
+            a {
+                &:hover {
+                    color: #ac2a2a;
+                }
+                text-decoration: none;
+                font-size: 16px;
+                color: #222;
+            }
+        }
+    }
+
+    .list {
+        flex-wrap: wrap;
+        width: 1080px;
+        margin-top: 32px;
+        display: flex;
+        margin: 32px auto 0px;
+        .list1 {
+            width: 268px;
+            height: 214px;
+            list-style: none;
+            padding: 8px 8px;
+            position: relative;
+            &:hover {
+                box-shadow: 0 0 5px 5px #efefef;
+            }
+            img {
+                border-radius: 5px;
+                width: 252px;
+                height: 110px;
+            }
+            .world {
+                height: 44px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 22px;
+                margin-top: 12px;
+                color: #222;
+            }
+            .world1 {
+                margin-top: 12px;
+                padding-bottom: 4px;
+                font-size: 12px;
+                color: #222;
+            }
+            .gray {
+                position: absolute;
+                top: 14px;
+                right: 18px;
+                border-radius: 2px;
+                font-weight: 700;
+                line-height: 15px;
+                height: 18px;
+                background: #fca000;
+                font-size: 12px;
+                color: #fff;
+                padding: 2px 4px;
+            }
+        }
+    }
+}

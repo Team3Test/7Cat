@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+
+#right-nav {
+    z-index: 99999;
+    width: 64px;
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    box-shadow: 0 2px 8px 0 hsla(0, 0%, 87.8%, 0.5);
+    .nav {
+        padding: 13px 12px;
+        position: relative;
+        cursor: pointer;
+        &:first-child {
+            border-radius: 5px 5px 0 0;
+        }
+        &:last-child {
+            display: none;
+            border-radius: 0 0 5px 5px;
+            #backBtn {
+                display: none;
+            }
+        }
+        &:hover {
+            background-color: #fdd117;
+        }
+        a {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            &:hover + .code1 {
+                display: block;
+            }
+            &:hover + .code2 {
+                display: block;
+            }
+            p {
+                width: 42px;
+                text-align: center;
+                font-size: 14px;
+                text-wrap: wrap;
+                line-height: 20px;
+                color: #222;
+                margin-bottom: 0;
+            }
+        }
+        .code1 {
+            width: 160px;
+            position: absolute;
+            right: 75px;
+            top: -75px;
+            display: none;
+            img {
+                width: 100%;
+                border-radius: 2px;
+            }
+        }
+        .code2 {
+            width: 160px;
+            padding: 20px;
+            background-color: #fff;
+            position: absolute;
+            right: 75px;
+            top: -75px;
+            display: none;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            img {
+                width: 120px;
+                height: 120px;
+                vertical-align: middle;
+            }
+            p {
+                text-align: center;
+                font-size: 14px;
+                display: block;
+                margin: 5px auto 0;
+            }
+        }
+        &:last-child {
+            a {
+                user-select: none;
+                cursor: pointer;
+                width: 100%;
+                svg {
+                    fill: #cc6d29;
+                }
+                p {
+                    color: #cc6d29;
+                    text-align: center;
+                }
+            }
+        }
+        &:last-child {
+            &:hover p {
+                color: #222;
+                z-index: 5;
+            }
+            &:hover svg {
+                fill: #222;
+                z-index: 5;
+            }
+        }
+    }
+    .line {
+        border: 0.05px solid #efefef;
+        width: 60%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8" />
+        <meta name="renderer" content="webkit" />
+        <meta name="force-rendering" content="webkit" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="wap-font-scale" content="no" />
+        <meta name="keywords" content="七猫中文网,作者专区,作家专区,原创作者,写小说" />
+        <meta name="description" content="七猫中文网作者专区，一个原创作家创作平台，写小说的网站，包括言情小说，穿越小说，玄幻小说，校园小说，都市小说，武侠小说，网游小说等等，写小说就能赚钱！" />
+        <link rel="icon" type="image/x-icon" href="https://cdn-front.qimao.com/global/static/images/favicon2022.ico" media="screen" />
+        <!-- 版心 -->
+        <link rel="stylesheet" href="../../public/font/iconfont.css" />
+        <link rel="stylesheet" href="./css/signup_nav.css" />
+        <!-- 脚页 -->
+        <link rel="stylesheet" href="./css/signup_foot.css" />
+        <!-- 版头 -->
+        <link rel="stylesheet" href="./css/signup_head.css" />
+        <!-- 布局 -->
+        <link rel="stylesheet" href="./css/signup_layout.css" />
+        <!-- 公共 -->
+        <link rel="stylesheet" href="../login/css/common.css" />
+        <link rel="stylesheet" href="../../component/webFooter/webFooter.css" />
+        <style type="text/css" id="rootThemeStyle">
+            :root {
+                --theme-global-primary-color: #f2a200;
+                --theme-global-font-black-color-hover: #f2a200;
+                --theme-global-default-page-content-diff-value: 280px;
+                --theme-global-login-image-logo-offset-top: 30px;
+                --theme-global-header-logo-bg: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/bg.8fb7b042.png);
+                --theme-global-header-logo-text: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/logo.d8225c42.svg);
+                --theme-global-login-bg: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/login-bg.cdce65ac.png);
+                --theme-global-login-logo-image: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/login-logo-image.2e01486e.png);
+                --theme-global-login-logo-txt: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/login-logo-txt.e83a3e70.png);
+                --theme-global-login-header-logo-txt: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/login-header-logo-txt.9f728643.png);
+                --theme-global-login-header-logo: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/login-header-logo.0cb06b76.png);
+                --theme-global-empty-common: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/empty-common.8989537a.png);
+                --theme-global-no-page: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/no-page.974a7ce4.png);
+                --theme-global-no-comment: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/no-comment.87c438e3.png);
+                --theme-global-no-income: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/no-income.6e4d7e9e.png);
+                --theme-global-no-search: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/no-search.5ed54f4a.png);
+                --theme-global-no-network: url(https://cdn-front.qimao.com/zuozhe-platform/web/img/no-network.d38aa0cb.png);
+                --theme-global-loading: url(data:image/png;base64,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);
+                --theme-global-checkbox-checked: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABsCAMAAAC4uKf/AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABpUExURUxpcf/JAPvIAPrJAPnKAPvIAPvIAPvIAPvIAPzIAPvHAP/RAPzIAP/MAPzIAP/FAPnFAPvIAPvIAPvHAPzIAPvHAPzIACIiIjIuH/vHAHdjFdOoBpp+D92xBKyLDEI6HcKbCVBFG1dLGpBvnU0AAAAWdFJOUwATUTMs7ITy4nbXBbcMxh/7kJGh0lN6PgYxAAACSklEQVR42u2a3ZKjIBBG10QUUIkx8cvPZiaz+/4PuVtTU8WFMk0D6ZvxPACnwKaFbn5tbGz8YLp6Nid31moclT67k5nr7jWmvelbLGh7sy9umhSCqKmgbzAWBNYMRVRVoxCBaqr8WTUtImmbzNntNBjoXYbq0INJf0ielgIblTa57ogkjl1CEDok4ir257JIxjI/XK2Rga5ZLoUsFMN20MhER69kZZGNrSJj3qEALm4HHFGEY1TeQCF2EcGhUAhFB0mPYvRRiyi0kINGQfTwraxBUZpvt3OLorQVMTGpqQ0KhVHhr2ZQHBOUWRTHhlx7vIB9QDbhBUwBmUIGb++PjxuWqPKreHtc/vPnLXodTYbrfvnkOcbGY5/j+uIRmfu7Nt91uWNB263I6ixXWIZ6RTZnucLLiJmIj1TXc4zMWKd81/U3VjityByxYVNdcCuyM0L4DZviwnlFphHg3Y+V4oJmZMbb1Y9GuyKz4xj6YIvxeC6MTJkfke/CyFxGPybfBcUNED8q2wXNCv3FuJSLDn3HyBIcFxyRrggb5aLTlUG0jXLRiXgGYfNQLvoXU4OwJbpQM48F3sZ3tR1x4CFspIu+7BrQNr4LhjikUjbaRR/2FW3juxT7YuFtXBcm4spE2byLv4oeG2PjuWzeNffj7/V5HxGJEb3AS5YmRIsukuUk0UKZZAlQsrgpWraVLEhLltpFmwiS7RHJxo9kS0u+WSffhpRvsMq3juWb4vLtfvmHDPJPNOQfn8g/q5F/MEQ/hRJ85LWxsfFz+QfnxyN2lcVKCAAAAABJRU5ErkJggg==);
+                --theme-global-el-tag-primary-light-color: #f2a200;
+                --theme-global-el-tag-primary-light-close-color: #f2a200;
+                --theme-global-el-tag-primary-light-close-hover-background-color: #f2a200;
+                --theme-global-el-tag-primary-dark-background-color: #f2a200;
+                --theme-global-el-tag-primary-dark-border-color: #f2a200;
+                --theme-global-el-tag-primary-plain-color: #f2a200;
+                --theme-global-el-tag-primary-plain-close-color: #f2a200;
+                --theme-global-el-tag-primary-plain-close-hover-background-color: #f2a200;
+            }
+        </style>
+        <title>登录-七猫原创作家专区-七猫中文网</title>
+    </head>
+    <body>
+        <div data-v-1cec3230="" id="app">
+            <div data-v-fd3e1e02="" data-v-1cec3230="" class="register-login-box">
+                <div data-v-0a389a22="" data-v-fd3e1e02="" class="qm-header-new header">
+                    <div data-v-0a389a22="" class="qm-header-new-space"></div>
+                    <div data-v-0a389a22="" class="qm-header-new-wrap">
+                        <div data-v-5779650c="" data-v-0a389a22="" class="qm-main header is-center is-center is-login" style="width: 1160px; margin: 0 auto">
+                            <div data-v-68444065="" data-v-0a389a22="" class="header-logo-wrap left-col" data-v-5779650c="">
+                                <div data-v-68444065="" class="login-header-logo">
+                                    <div data-v-68444065="" class="login-header-logo-img"></div>
+                                    <a href="../../index.html">
+                                        <div data-v-68444065="" class="login-header-logo-txt"></div>
+                                    </a>
+                                    <!---->
+                                </div>
+                            </div>
+                            <div data-v-629954e2="" data-v-0a389a22="" class="header-menu right-col" data-v-5779650c="">
+                                <ul data-v-629954e2="" class="header-menu-list">
+                                    <li data-v-629954e2="" class="header-menu-list-item">
+                                        <div data-v-dc0350a0="" data-v-629954e2="" class="qm-dropdown">
+                                            <div data-v-dc0350a0="" class="qm-dropdown-title">
+                                                <div data-v-629954e2="" data-v-dc0350a0="" class="header-menu-list-item-title"><span data-v-629954e2="" data-v-dc0350a0="">签约政策</span></div>
+                                            </div>
+                                            <div data-v-dc0350a0="" class="qm-dropdown-con">
+                                                <ul data-v-dc0350a0="" class="qm-dropdown-list">
+                                                    <li data-v-dc0350a0="" class="qm-dropdown-list-item center"><a target="_blank" data-v-629954e2="" data-v-dc0350a0="" href="../policy/policy.html">七猫签约政策</a></li>
+                                                    <li class="qm-dropdown-list-item center"><a target="_blank" href="../policy/policy.html">奇妙签约政策</a></li>
+                                                    <li class="qm-dropdown-list-item center"><a target="_blank" href="../policy/policy.html">纵横签约政策</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!---->
+                                </ul>
+                                <div data-v-4fcb5479="" data-v-629954e2="" class="el-dialog__wrapper qm-pop" style="display: none">
+                                    <div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog el-dialog--center" style="margin-top: 0px">
+                                        <div class="el-dialog__header">
+                                            <span class="el-dialog__title"></span
+                                            ><!---->
+                                        </div>
+                                        <!----><!---->
+                                    </div>
+                                </div>
+                                <div data-v-0ced8e7e="" data-v-9fbbab64="" data-v-629954e2="" class="el-dialog__wrapper qm-dialog w-480 center h-p-24" style="display: none">
+                                    <div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top: 0px">
+                                        <div class="el-dialog__header">
+                                            <span class="el-dialog__title"></span
+                                            ><!---->
+                                        </div>
+                                        <!----><!---->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-v-fd3e1e02="" class="register-login-wrapper">
+                    <div data-v-522fdcc8="" data-v-fd3e1e02="" class="login-wrap">
+                        <div data-v-522fdcc8="" class="login-wrap-box">
+                            <div data-v-522fdcc8="" class="left-col">
+                                <div data-v-522fdcc8="" class="image-logo"></div>
+                            </div>
+                            <div data-v-522fdcc8="" class="right-col">
+                                <div data-v-522fdcc8="" class="txt-logo"><!----></div>
+                                <div data-v-bb3bb7f0="" data-v-522fdcc8="" class="login-input-card login-card">
+                                    <div data-v-bb3bb7f0="" class="el-tabs-flex login-tabs el-tabs el-tabs--top" size="big">
+                                        <div class="el-tabs__header is-top">
+                                            <div class="el-tabs__nav-wrap is-top">
+                                                <div class="el-tabs__nav-scroll">
+                                                    <div role="tablist" class="el-tabs__nav is-top" style="transform: translateX(0px)">
+                                                        <div class="el-tabs__active-bar is-top" style="width: 168px; transform: translateX(0px)"></div>
+                                                        <div id="tab-message" aria-controls="pane-message" role="tab" aria-selected="true" tabindex="0" class="el-tabs__item is-top is-active">手机验证码登录</div>
+                                                        <div id="tab-user" aria-controls="pane-user" role="tab" tabindex="-1" class="el-tabs__item is-top">帐号密码登录</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="el-tabs__content">
+                                            <div data-v-bb3bb7f0="" role="tabpanel" id="pane-message" aria-labelledby="tab-message" class="el-tab-pane"></div>
+                                            <div data-v-bb3bb7f0="" role="tabpanel" aria-hidden="true" id="pane-user" aria-labelledby="tab-user" class="el-tab-pane" style="display: none"></div>
+                                            <form data-v-bb3bb7f0="" class="el-form qm-form">
+                                                <div data-v-bb3bb7f0="" class="el-form-item">
+                                                    <!---->
+                                                    <div class="el-form-item__content">
+                                                        <div data-v-bb3bb7f0="" class="br-22 el-input el-input--suffix"><!----><input type="text" autocomplete="off" maxlength="11" placeholder="手机号" class="el-input__inner" /><!----><!----><!----><!----></div>
+                                                        <!---->
+                                                    </div>
+                                                </div>
+                                                <div data-v-bb3bb7f0="" class="err-msg">
+                                                    <div data-v-bb3bb7f0="" style="display: none"><i data-v-bb3bb7f0="" class="el-icon-warning" style="display: none"></i><span data-v-bb3bb7f0=""></span></div>
+                                                </div>
+                                                <div data-v-bb3bb7f0="" class="el-form-item">
+                                                    <!---->
+                                                    <div class="el-form-item__content">
+                                                        <div data-v-bb3bb7f0="" class="br-22 el-input el-input--suffix">
+                                                            <!----><input type="number" autocomplete="off" placeholder="验证码" class="el-input__inner" /><!----><span class="el-input__suffix"
+                                                                ><span class="el-input__suffix-inner">
+                                                                    <div data-v-04314448="" data-v-bb3bb7f0="">
+                                                                        <a data-v-04314448="" href="javascript:void(0);" class="qm-verification-code-btn transparent">获取验证码</a>
+                                                                        <div data-v-04314448="" class="el-dialog__wrapper qm-pop qm-pop-captcha" style="display: none">
+                                                                            <div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog el-dialog--center" style="margin-top: 0px">
+                                                                                <div class="el-dialog__header">
+                                                                                    <span class="el-dialog__title"></span
+                                                                                    ><!---->
+                                                                                </div>
+                                                                                <!----><!---->
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!----><!----><!----><!----> </span
+                                                                ><!----></span
+                                                            ><!----><!---->
+                                                        </div>
+                                                        <!---->
+                                                    </div>
+                                                </div>
+                                                <div data-v-bb3bb7f0="" class="err-msg">
+                                                    <div data-v-bb3bb7f0="" style="display: none"><i data-v-bb3bb7f0="" class="el-icon-warning" style="display: none"></i><span data-v-bb3bb7f0=""></span></div>
+                                                </div>
+                                                <div data-v-bb3bb7f0="" class="checked-wrap">
+                                                    <label data-v-bb3bb7f0="" class="el-checkbox"
+                                                        ><span class="el-checkbox__input"><span class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="false" class="el-checkbox__original" value="" /></span
+                                                        ><!----></label
+                                                    ><span data-v-bb3bb7f0="" class="checkbox">已阅读并同意</span><a data-v-bb3bb7f0="" href="javascript:void();">《用户协议》</a><a data-v-bb3bb7f0="" href="javascript:void();" class="important">《隐私政策》</a
+                                                    ><a data-v-bb3bb7f0="" href="javascript:void();" class="important">《作品登载规则》</a>
+                                                </div>
+                                                <div data-v-bb3bb7f0="" class="el-form-item">
+                                                    <!---->
+                                                    <div class="el-form-item__content">
+                                                        <a data-v-1c2fc011="" data-v-bb3bb7f0="" href="javascript:void(0);" target="" class="qm-btn important huge spacing-24 radius disabled need-loading-icon">登录</a
+                                                        ><!---->
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <p data-v-bb3bb7f0="" class="form-bottom-txt cf">
+                                        <span data-v-bb3bb7f0="" class="left"><em data-v-bb3bb7f0="">还不是作者?</em><a data-v-bb3bb7f0="" href="../signup/signup.html" class="important"> 立即注册 </a></span><a data-v-bb3bb7f0="" href="javascript:void(0);" class="important right"> 找回密码 </a>
+                                    </p>
+                                    <div data-v-4fcb5479="" data-v-bb3bb7f0="" class="el-dialog__wrapper qm-pop" style="display: none">
+                                        <div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog el-dialog--center" style="margin-top: 0px">
+                                            <div class="el-dialog__header">
+                                                <span class="el-dialog__title"></span
+                                                ><!---->
+                                            </div>
+                                            <!----><!---->
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div data-v-0ced8e7e="" data-v-9fbbab64="" data-v-bb3bb7f0="" class="el-dialog__wrapper qm-dialog w-480 center h-p-24" style="display: none">
+                                        <div role="dialog" aria-modal="true" aria-label="dialog" class="el-dialog" style="margin-top: 0px">
+                                            <div class="el-dialog__header">
+                                                <span class="el-dialog__title"></span
+                                                ><!---->
+                                            </div>
+                                            <!----><!---->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe data-v-522fdcc8="" id="ref-sync-token" src="%E7%99%BB%E5%BD%95-%E4%B8%83%E7%8C%AB%E5%8E%9F%E5%88%9B%E4%BD%9C%E5%AE%B6%E4%B8%93%E5%8C%BA-%E4%B8%83%E7%8C%AB%E4%B8%AD%E6%96%87%E7%BD%91_files/sync-user-info.htm" class="sync-token-hidden"></iframe>
+                    </div>
+                </div>
+                <!-- 底部 -->
+                <div id="footer">
+                    <div class="footerInfo">
+                        <ul class="friendLink">
+                            <li>友情链接：</li>
+                            <li>
+                                <a target="_blank" href="http://xiaoshuo.wtzw.com/">七猫免费小说</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.zongheng.com/">纵横中文网</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://miao.qimao.com/">奇妙小说网</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://huayu.zongheng.com/">纵横女生网</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://naodong.zongheng.com/">脑洞星球</a>
+                            </li>
+                        </ul>
+
+                        <ul class="about">
+                            <li><a target="_blank" href="../about/about.html">关于七猫</a><span>|</span></li>
+                            <li><a target="_blank" href="../about/about.html">联系我们</a><span>|</span></li>
+                            <li><a href="javascript:void();">我要举报</a><span>|</span></li>
+                            <li><a href="javascript:void();">举报工作室</a><span>|</span></li>
+                            <li><a target="_blank" href="../about/about.html">隐私协议</a><span>|</span></li>
+                            <li><a target="_blank" href="../about/about.html">版权声明</a><span>|</span></li>
+                            <li><a target="_blank" href="../signup/signup.html">我要当作家</a><span>|</span></li>
+                            <li><a target="_blank" href="../about/about.html">用户协议</a></li>
+                        </ul>
+
+                        <p class="telephone">客服电话：400-855-9290&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作时间：周一至周五9:00-18:00</p>
+
+                        <p class="keepOnRecord">
+                            <span>上海七猫文化传媒有限公司&nbsp;&nbsp;© 2017 www.qimao.com All rights reserved</span>
+                            <a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">沪ICP备17012825号-6</a>
+                            <span>沪公网安备&nbsp;31011502010023号</span>
+                            <a
+                                target="_blank"
+                                href="https://wap.scjgj.sh.gov.cn/businessCheck/verifKey.do?showType=extShow&serial=9031000020190722152105000004867583-SAIC_SHOW_310000-2020030415053789015&signData=MEQCIEkBkB9iRQU6cFZkvRZxUFL3bfnb79F47g/DlN1cyQz2AiAMvdmNY5e++2nkv9YcqfTuyni81uITxhyu08vw3HgQNA=="
+                            >
+                                <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/business_license_pic.jpg" alt="" />
+                            </a>
+                        </p>
+
+                        <p class="publish">出版物经营许可证&nbsp;新出发沪批字第Y7129号&nbsp;沪网文 [2020] 1747-135号&nbsp;沪ICP证：沪B2-20190085</p>
+
+                        <ul class="netPolice">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic1.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.12377.cn/">
+                                    <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic2.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic3.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.shjbzx.cn/">
+                                    <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic4.png" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic5.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

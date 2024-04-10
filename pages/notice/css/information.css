@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+#information-page {
+  width: 1150px;
+  margin: 24px auto 40px;
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(230, 230, 230, 0.5);
+  border-radius: 4px;
+  padding: 0 40px;
+}
+#information-page .infor-title {
+  padding-top: 30px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e7e7e7;
+}
+#information-page .infor-title p {
+  height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  line-height: 24px;
+}
+#information-page ul {
+  list-style: none;
+}
+#information-page ul li {
+  padding: 0;
+  height: 54px;
+  line-height: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+#information-page ul li:hover {
+  background: #fffdf7;
+}
+#information-page ul li:link {
+  color: #222;
+}
+#information-page ul li span {
+  height: 54px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#information-page ul li .infor-text {
+  width: 860px;
+  font-size: 16px;
+  color: #222;
+}
+#information-page ul li .infor-text a {
+  text-decoration: none;
+  color: #222;
+}
+#information-page ul li .infor-text a:hover {
+  color: #b04f08;
+}
+#information-page ul li .text-right {
+  color: #999;
+  font-size: 14px;
+}/*# sourceMappingURL=information.css.map */

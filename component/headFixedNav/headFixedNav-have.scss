@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#fixedHeader,
+#fixedHeaderFixed {
+    z-index: 999999;
+    width: 100%;
+    transition: all 0.3s;
+    background-color: white;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: -100px;
+    ul {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    .nav {
+        width: 100%;
+        background-color: white;
+        .navLogo {
+            width: 1150px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: initial;
+            .logoNav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                img {
+                    height: 34px;
+                    margin-right: 40px;
+                }
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                }
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    li {
+                        height: 100%;
+                    }
+                    a {
+                        height: 100%;
+                        text-decoration: none;
+                        color: #222;
+                        padding: 18px 5px;
+                        margin-right: 10px;
+                        font-size: 16px;
+                        position: relative;
+                    }
+                    .visitBtn {
+                        font-weight: 600;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: 8px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 13px;
+                            height: 3px;
+                            background-color: #fcc800;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+            .sch {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li:first-child {
+                    margin-right: 17px;
+                    div {
+                        width: 250px;
+                        height: 32px;
+                        border-radius: 30px;
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    a {
+                        width: 60px;
+                        text-align: center;
+                        line-height: 32px;
+                        height: 100%;
+                        position: absolute;
+                        right: -2px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        border-radius: 0 30px 30px 0;
+                        color: black;
+                        font-weight: 600;
+                        display: inline-block;
+                        font-size: 12px;
+                        background-color: #fdd117;
+                        &:hover {
+                            color: #222;
+                            background-color: #fcb900;
+                        }
+                    }
+                    input {
+                        border: 1.5px solid #fdd117;
+                        outline: none;
+                        position: absolute;
+                        top: 50%;
+                        left: 1px;
+                        transform: translateY(-50%);
+                        width: 100%;
+                        height: 32px;
+                        padding: 3px 78px 3px 15px;
+                        font-size: 13px;
+                        border-radius: 26px;
+                        &::placeholder {
+                            font-size: 11px;
+                            color: rgba(128, 128, 128, 0.614);
+                        }
+                    }
+                    svg {
+                        // 输入框清除按钮
+                        display: none;
+                        width: 11px;
+                        height: 11px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 63px;
+                        opacity: 0.2;
+                    }
+                }
+                li:last-child {
+                    a {
+                        color: black;
+                        font-size: 12px;
+                        display: flex;
+                        align-items: center;
+                        &:hover {
+                            color: #cc6d29;
+                            svg {
+                                fill: #cc6d29;
+                            }
+                        }
+                    }
+                    svg {
+                        width: auto;
+                        height: 16px;
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#fixedHeader {
+    position: static;
+    top: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #ebebeb;
+}

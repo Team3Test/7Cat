@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>七猫中文网-征文活动</title>
+        <link rel="icon" href="https://cdn-front.qimao.com/global/static/images/favicon2022.ico" />
+        <link rel="stylesheet" href="../../../public/css/mui.min.css" />
+        <link rel="stylesheet" href="../../../component/pageNav/pageStyle.css" />
+        <link rel="stylesheet" href="../css/callPapersEvents.css" />
+        <link rel="stylesheet" href="../../../component/headFixedNav/headFixedNav-have.css" />
+        <link rel="stylesheet" href="../../../component/webFooter/webFooter.css" />
+        <link rel="stylesheet" href="../../../component/rightNav/right-nav.css" />
+        <style>
+            #footer {
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- ---- 静态固定导航 ---- -->
+        <div id="fixedHeader">
+            <div class="nav">
+                <div class="navLogo">
+                    <div class="logoNav">
+                        <a href="../../../index.html">
+                            <img src="https://cdn-front.qimao.com/qimao/img/header/logo.d026f02.png" alt="Logo" />
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="../../../index.html">首页</a>
+                            </li>
+                            <li>
+                                <a href="../../classification/classification.html">分类</a>
+                            </li>
+                            <li>
+                                <a href="../../leaderboard/leaderboard.html">排行榜</a>
+                            </li>
+                            <li>
+                                <a class="visitBtn" href="../../callPapersEvents/callPapersEvents.html">征文活动</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="../../signup/signup.html">作家专区</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="../../policy/policy.html">签约政策</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="sch">
+                        <li>
+                            <div>
+                                <input placeholder="请输入书名/作者/主角" type="text" />
+                                <a target="_blank" href="../../Search/‌Search.html">搜索</a>
+                                <svg t="1711518327142" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4263" width="32" height="32">
+                                    <path
+                                        d="M512 981.333333c259.2 0 469.333333-210.133333 469.333333-469.333333S771.2 42.666667 512 42.666667 42.666667 252.8 42.666667 512s210.133333 469.333333 469.333333 469.333333z m214.826667-261.845333a64 64 0 0 1-90.453334 1.578667l-122.794666-118.570667-118.570667 122.752A64 64 0 0 1 302.933333 636.330667l118.570667-122.752L298.666667 395.008A64 64 0 1 1 387.626667 302.933333l122.794666 118.570667 118.528-122.752A64 64 0 0 1 721.066667 387.669333l-118.613334 122.752 122.794667 118.570667a64 64 0 0 1 1.578667 90.453333z"
+                                        fill="#000000"
+                                        p-id="4264"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../../login/login.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                                </svg>
+                                <span>立即登录</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---- 滑动显示导航 ---- -->
+        <div id="fixedHeaderFixed">
+            <div class="nav">
+                <div class="navLogo">
+                    <div class="logoNav">
+                        <a href="../../../index.html">
+                            <img src="https://cdn-front.qimao.com/qimao/img/header/logo.d026f02.png" alt="Logo" />
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="../../../index.html">首页</a>
+                            </li>
+                            <li>
+                                <a href="../../classification/classification.html">分类</a>
+                            </li>
+                            <li>
+                                <a href="../../leaderboard/leaderboard.html">排行榜</a>
+                            </li>
+                            <li>
+                                <a class="visitBtn" href="../../callPapersEvents/callPapersEvents.html">征文活动</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="../../signup/signup.html">作家专区</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="../../policy/policy.html">签约政策</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="sch">
+                        <li>
+                            <div>
+                                <input placeholder="请输入书名/作者/主角" type="text" />
+                                <a target="_blank" href="../../Search/‌Search.html">搜索</a>
+                                <svg t="1711518327142" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4263" width="32" height="32">
+                                    <path
+                                        d="M512 981.333333c259.2 0 469.333333-210.133333 469.333333-469.333333S771.2 42.666667 512 42.666667 42.666667 252.8 42.666667 512s210.133333 469.333333 469.333333 469.333333z m214.826667-261.845333a64 64 0 0 1-90.453334 1.578667l-122.794666-118.570667-118.570667 122.752A64 64 0 0 1 302.933333 636.330667l118.570667-122.752L298.666667 395.008A64 64 0 1 1 387.626667 302.933333l122.794666 118.570667 118.528-122.752A64 64 0 0 1 721.066667 387.669333l-118.613334 122.752 122.794667 118.570667a64 64 0 0 1 1.578667 90.453333z"
+                                        fill="#000000"
+                                        p-id="4264"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </li>
+                        <li>
+                            <a target="_blank" href="../../login/login.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                                </svg>
+                                <span>立即登录</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右边导航 -->
+        <div id="right-nav">
+            <div class="nav">
+                <a href="javascript:void();">
+                    <p>作家</p>
+                    <p>助手</p>
+                </a>
+                <div class="code1">
+                    <img class="right-nav-img1" src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200313/images/common/new-app_zhushou_pic.png" alt="" />
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="nav">
+                <a target="_blank" href="../../freeBooks/freeBooks.html">
+                    <p>免费</p>
+                    <p>小说</p>
+                </a>
+            </div>
+            <div class="line"></div>
+            <div class="nav">
+                <a target="_blank" href="../../policy/policy.html">
+                    <p>联系</p>
+                    <p>编辑</p>
+                </a>
+            </div>
+            <div class="line"></div>
+            <div class="nav">
+                <a href="javascript:void();">
+                    <svg t="1711948335271" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="968" width="26" height="24">
+                        <path
+                            d="M390.34880002 105.06239988h-224.76800002c-38.8096 0-70.40000003 31.59039999-70.40000004 70.40000014v224.76800004c0 38.8096 31.59039999 70.40000003 70.40000004 70.3999999h224.76800002c38.8096 0 70.40000003-31.59039999 70.39999999-70.3999999v-224.76800004c0.05119995-38.86080002-31.5392-70.40000003-70.39999999-70.39999999zM414.72000002 400.23040006c0 13.41439999-10.9056 24.31999982-24.32000001 24.31999997h-224.76800001c-13.41439999 0-24.31999982-10.9056-24.32-24.32000014v-224.76799987c0-13.41439999 10.9056-24.31999982 24.32-24.32000006h224.76800001c13.41439999 0 24.31999982 10.9056 24.31999995 24.32000006v224.76799987zM390.34880002 546.61120014h-224.76800002c-38.8096 0-70.40000003 31.59039999-70.40000004 70.39999983v224.76800002c0 38.8096 31.59039999 70.40000003 70.40000004 70.40000015h224.76800002c38.8096 0 70.40000003-31.59039999 70.39999999-70.40000015v-224.76799988c0.05119995-38.8096-31.5392-70.40000003-70.39999999-70.39999997zM414.72000002 841.77919999c0 13.41439999-10.9056 24.31999982-24.32000001 24.32000003h-224.76800001c-13.41439999 0-24.31999982-10.9056-24.32-24.32000003v-224.76800002c0-13.41439999 10.9056-24.31999982 24.32-24.32000001h224.76800001c13.41439999 0 24.31999982 10.9056 24.31999995 24.32000001v224.76800002zM841.62560002 105.06239988h-224.76799998c-38.8096 0-70.40000003 31.59039999-70.40000001 70.40000014v224.76800004c0 38.8096 31.59039999 70.40000003 70.40000001 70.3999999h224.76799998c38.8096 0 70.40000003-31.59039999 70.39999995-70.3999999v-224.76800004c0-38.86080002-31.59039999-70.40000003-70.39999995-70.39999999z m24.32000003 295.16800018c0 13.41439999-10.9056 24.31999982-24.32000003 24.31999993h-224.76799998c-13.41439999 0-24.31999982-10.9056-24.32000008-24.31999993v-224.76800004c0-13.41439999 10.9056-24.31999982 24.32000008-24.31999996h224.76799998c13.41439999 0 24.31999982 10.9056 24.32000003 24.31999996v224.76800004zM571.4944 545.58720003a23.04000001 23.04000001 0 0 0-23.04000005 23.04v317.38879999c0 12.7487998 10.29119999 23.04000001 23.04000005 23.03999987s23.04000001-10.29119999 23.04000011-23.03999987v-317.38879999c0-12.7487998-10.29119999-23.04000001-23.04000011-23.04000005zM719.05280001 545.58720003a23.04000001 23.04000001 0 0 0-23.04000002 23.04v317.38879999c0 12.7487998 10.29119999 23.04000001 23.04000002 23.03999987s23.04000001-10.29119999 23.03999992-23.03999987v-317.38879999a23.04000001 23.04000001 0 0 0-23.03999999-23.04000005zM866.56 545.58720003a23.04000001 23.04000001 0 0 0-23.03999999 23.04v317.38879999c0 12.7487998 10.29119999 23.04000001 23.03999999 23.03999987s23.04000001-10.29119999 23.04-23.03999987v-317.38879999c0-12.7487998-10.29119999-23.04000001-23.04-23.04000005z"
+                            fill="#222222"
+                            p-id="971"
+                        ></path>
+                    </svg>
+                    <p>公众号</p>
+                </a>
+                <div class="code2">
+                    <p>七猫中文网公众号</p>
+                    <img class="right-nav-img2" src="https://cdn-front.qimao.com/qimao/img/common/right_qrcode.2375b4e.png" alt="" />
+                    <p>微信扫一扫关注</p>
+                </div>
+            </div>
+            <div class="nav" id="lastnav">
+                <a id="backBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+                        <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+                    </svg>
+                    <p>顶部</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="activity">
+            <ul class="qm">
+                <li class="tab1">
+                    <a href="../callPapersEvents.html">当前活动</a>
+                </li>
+                <li class="tab">
+                    <a href="">往期活动</a>
+                </li>
+            </ul>
+            <ul class="list">
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/17084843533374146.jpg" alt="" />
+                        <p class="world">【率土之滨 笔舞乾坤】七猫中文网&率土之滨IP全题材征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/16931900468084959.jpg" alt="" />
+                        <p class="world">【废柴修仙，凤逆九天】七猫中文网女频特色题材第八季征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                        <div class="gray">已结束</div>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/17084843533374146.jpg" alt="" />
+                        <p class="world">【率土之滨 笔舞乾坤】七猫中文网&率土之滨IP全题材征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/16931900468084959.jpg" alt="" />
+                        <p class="world">【废柴修仙，凤逆九天】七猫中文网女频特色题材第八季征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                        <div class="gray">已结束</div>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/17084843533374146.jpg" alt="" />
+                        <p class="world">【率土之滨 笔舞乾坤】七猫中文网&率土之滨IP全题材征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/16931900468084959.jpg" alt="" />
+                        <p class="world">【废柴修仙，凤逆九天】七猫中文网女频特色题材第八季征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                        <div class="gray">已结束</div>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/17084843533374146.jpg" alt="" />
+                        <p class="world">【率土之滨 笔舞乾坤】七猫中文网&率土之滨IP全题材征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/16931900468084959.jpg" alt="" />
+                        <p class="world">【废柴修仙，凤逆九天】七猫中文网女频特色题材第八季征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                        <div class="gray">已结束</div>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/17084843533374146.jpg" alt="" />
+                        <p class="world">【率土之滨 笔舞乾坤】七猫中文网&率土之滨IP全题材征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/16931900468084959.jpg" alt="" />
+                        <p class="world">【废柴修仙，凤逆九天】七猫中文网女频特色题材第八季征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                        <div class="gray">已结束</div>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/17084843533374146.jpg" alt="" />
+                        <p class="world">【率土之滨 笔舞乾坤】七猫中文网&率土之滨IP全题材征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/16931900468084959.jpg" alt="" />
+                        <p class="world">【废柴修仙，凤逆九天】七猫中文网女频特色题材第八季征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                        <div class="gray">已结束</div>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/17084843533374146.jpg" alt="" />
+                        <p class="world">【率土之滨 笔舞乾坤】七猫中文网&率土之滨IP全题材征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                    </li>
+                </a>
+                <a href="../../callPapersDetails/callPapersDetails2.html" style="text-decoration: none" target="_blank">
+                    <li class="list1">
+                        <img src="https://cdn.qimao.com/bookimg/zww/backendstatic/images/other/16931900468084959.jpg" alt="" />
+                        <p class="world">【废柴修仙，凤逆九天】七猫中文网女频特色题材第八季征文</p>
+                        <p class="world1">活动时间：2024-02-28 - 2024-06-30</p>
+                        <div class="gray">已结束</div>
+                    </li>
+                </a>
+            </ul>
+            <!-- 底部分页信息 -->
+            <div class="bottom-pagination">
+                <div class="pagination mui-content-padded">
+                    <ul class="mui-pager mui-pagination mui-pagination-sm">
+                        <!-- 此分页包括 上一页 1-5 ... 22 下一页 数字框 跳转 -->
+                        <!-- 可根据需求需自行添加（里面的样式都是死的，不会变化） -->
+                        <li>
+                            <a href="#"> 上一页 </a>
+                        </li>
+                        <li class="mui-active">
+                            <a href="#"> 1 </a>
+                        </li>
+                        <li>
+                            <a href="#"> 2 </a>
+                        </li>
+                        <li>
+                            <a href="#"> 3 </a>
+                        </li>
+                        <li>
+                            <a href="#"> 4 </a>
+                        </li>
+                        <li>
+                            <a href="#"> 5 </a>
+                        </li>
+                        <li>
+                            <a href="#"> ... </a>
+                        </li>
+                        <li class="mui-next">
+                            <a href="#"> 22 </a>
+                        </li>
+                        <li>
+                            <a href="#"> 下一页 </a>
+                        </li>
+                        <li class="num-input">
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#"> 跳转 </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div id="footer">
+            <div class="footerInfo">
+                <ul class="friendLink">
+                    <li>友情链接：</li>
+                    <li>
+                        <a target="_blank" href="http://xiaoshuo.wtzw.com/">七猫免费小说</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.zongheng.com/">纵横中文网</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://miao.qimao.com/">奇妙小说网</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://huayu.zongheng.com/">纵横女生网</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://naodong.zongheng.com/">脑洞星球</a>
+                    </li>
+                </ul>
+
+                <ul class="about">
+                    <li><a target="_blank" href="../../about/about.html">关于七猫</a><span>|</span></li>
+                    <li><a target="_blank" href="../../about/about.html">联系我们</a><span>|</span></li>
+                    <li><a href="javascript:void();">我要举报</a><span>|</span></li>
+                    <li><a href="javascript:void();">举报工作室</a><span>|</span></li>
+                    <li><a target="_blank" href="../../about/about.html">隐私协议</a><span>|</span></li>
+                    <li><a target="_blank" href="../../about/about.html">版权声明</a><span>|</span></li>
+                    <li><a target="_blank" href="../../signup/signup.html">我要当作家</a><span>|</span></li>
+                    <li><a target="_blank" href="../../about/about.html">用户协议</a></li>
+                </ul>
+
+                <p class="telephone">客服电话：400-855-9290&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作时间：周一至周五9:00-18:00</p>
+
+                <p class="keepOnRecord">
+                    <span>上海七猫文化传媒有限公司&nbsp;&nbsp;© 2017 www.qimao.com All rights reserved</span>
+                    <a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">沪ICP备17012825号-6</a>
+                    <span>沪公网安备&nbsp;31011502010023号</span>
+                    <a
+                        target="_blank"
+                        href="https://wap.scjgj.sh.gov.cn/businessCheck/verifKey.do?showType=extShow&serial=9031000020190722152105000004867583-SAIC_SHOW_310000-2020030415053789015&signData=MEQCIEkBkB9iRQU6cFZkvRZxUFL3bfnb79F47g/DlN1cyQz2AiAMvdmNY5e++2nkv9YcqfTuyni81uITxhyu08vw3HgQNA=="
+                    >
+                        <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/business_license_pic.jpg" alt="" />
+                    </a>
+                </p>
+
+                <p class="publish">出版物经营许可证&nbsp;新出发沪批字第Y7129号&nbsp;沪网文 [2020] 1747-135号&nbsp;沪ICP证：沪B2-20190085</p>
+
+                <ul class="netPolice">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic1.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.12377.cn/">
+                            <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic2.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic3.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.shjbzx.cn/">
+                            <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic4.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="https://cdn.qimao.com/bookimg/zww/frontendstatic/20200105/images/footer/company_pic5.png" alt="" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script src="../../../public/js/slide.js"></script>
+    <script src="../../../public/js/backtop.js"></script>
+</html>

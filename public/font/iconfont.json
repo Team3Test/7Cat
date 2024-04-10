@@ -1,0 +1,58 @@
+{
+  "id": "4492924",
+  "name": "7cat",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1002614",
+      "name": "文本",
+      "font_class": "icon",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "1727527",
+      "name": "306问号-线性圆框",
+      "font_class": "wenhao-xianxingyuankuang",
+      "unicode": "e8e9",
+      "unicode_decimal": 59625
+    },
+    {
+      "icon_id": "2570763",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e6d9",
+      "unicode_decimal": 59097
+    },
+    {
+      "icon_id": "4329395",
+      "name": "图文管理",
+      "font_class": "tuwenguanli",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "11862328",
+      "name": "圆点",
+      "font_class": "yuandian",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "14734558",
+      "name": "下三角",
+      "font_class": "xiasanjiao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "25964407",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    }
+  ]
+}
